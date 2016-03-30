@@ -1,0 +1,85 @@
+@import './fonts';
+
+/* Type */
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+/* Headings */
+
+.h-1,
+.h-2,
+.h-3,
+.h-4,
+.h-5,
+.h-smallcaps {
+  font-family: var(--fontPrimaryFallback);
+  font-weight: var(--fontWeightPrimaryBold);
+}
+  .fonts-loaded .h-1,
+  .fonts-loaded .h-2,
+  .fonts-loaded .h-3,
+  .fonts-loaded .h-4,
+  .fonts-loaded .h-5,
+  .fonts-loaded .h-smallcaps {
+    font-family: var(--fontPrimary);
+  }
+
+.h-1 {
+  font-size: 2.4rem;
+}
+
+.h-2 {
+  font-size: 1.8rem;
+}
+
+.h-3 {
+  font-size: 1.6rem;
+}
+
+.h-4,
+.h-5 {
+  font-size: 1.5rem;
+}
+
+.h-smallcaps {
+  font-size: 1.1rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* */
+
+.t-center {
+  text-align: center;
+}
+
+.t-left {
+  text-align: left;
+}
+
+.t-right {
+  text-align: right;
+}
+
+.t-upper {
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.t-nowrap {
+  white-space: nowrap;
+}
+
+.t-underline {
+  text-decoration: underline;
+}
+
+.t-no-decoration {
+  text-decoration: none;
+}

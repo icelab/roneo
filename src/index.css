@@ -1,0 +1,53 @@
+/**
+ * Reset
+ */
+@import './reset';
+
+/**
+ * General traits
+ */
+@import './traits';
+
+/**
+ * Base
+ */
+
+html {
+  font-size: 62.5%;
+}
+  html.breakpoint-tablet {
+    font-size: 56.25%;
+  }
+  html.breakpoint-phone {
+    font-size: 50%;
+  }
+
+body {
+  background-color: var(--colorGreySubtle);
+  color: var(--colorGreyDark);
+  font-family: var(--fontPrimaryFallback);
+  font-size: 1.5rem;
+  line-height: 1.4;
+  overflow-x: hidden;
+}
+  .fonts-loaded body {
+    font-family: var(--fontPrimary);
+  }
+  .breakpoint-widescreen body {
+    display: flex;
+  }
+
+/**
+ * Components
+ */
+
+@import './buttons';
+@import './copy';
+@import './header';
+@import './links';
+@import './labels';
+@import './nav';
+@import './page';
+@import './panel';
+@import './tables';
+@import './tabs';

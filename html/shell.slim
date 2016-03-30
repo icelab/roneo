@@ -1,0 +1,62 @@
+html lang="en"
+  head
+    meta charset="utf-8"
+    == page.breakpoints
+    / Inlined JavaScript
+    script
+      == page.assets.read("inline-admin-boot-header.js")
+    / Your admin CSS
+    link rel="stylesheet" type="text/css" href=page.assets["admin.css"]
+    / Your admin JS
+    script type="text/javascript" src=page.assets["admin.js"]
+    title Admin
+    == page.csrf_metatag
+  body data-view-fast-click=true data-view-disable-input-zoom=true
+    / Nav
+    nav.nav role="nav"
+      .nav__content
+        .nav-group
+          h2.nav-group__header Admin
+          .nav-list
+            a.nav-list__link href="/admin" Dashboard
+            / Additional nav items go here
+        / ... or here
+        .nav-user
+          .copy
+            p
+              ' You’re logged in as:
+              strong.t-nowrap Sarah Connor
+
+          .nav-list
+            button.nav-list__link data-view-confirm-action=JSON.generate(action: "/admin/sign-out") Log out
+
+
+    / Header
+    header.header role="header"
+      button.nav-toggle.hide-widescreen data-view-toggle-class=JSON.generate({ \
+        event: "click", \
+        targetSelector: ".nav, .page, .header, .page-overlay", \
+        targetToggleClassName: "nav-open", \
+        triggerToggleClassName: "nav-toggle--nav-open" })
+        span.f-fallthrough> &larr;
+        ' Menu
+      h1.header__name
+        a href="/admin" Admin Area
+      .header-nav
+        a.header-nav__link href="/admin" Dashboard
+        / Additional header nav items go here
+
+    / Main
+    .page role="main"
+      .page__contents
+        == yield
+    button.page-overlay.hide-widescreen data-view-toggle-class=JSON.generate({ \
+      event: "click", \
+      targetSelector: ".nav, .page, .header, .page-overlay", \
+      targetToggleClassName: "nav-open", \
+      triggerToggleClassName: "nav-toggle--nav-open" })
+        span.hide-visually Toggle nav
+
+    / Inlined JS
+    script
+      == page.assets.read("inline-admin-boot-footer.js")

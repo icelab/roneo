@@ -1,0 +1,22 @@
+@import '../traits';
+
+.link,
+.link-children a {
+  color: var(--colorLink);
+  text-decoration: underline;
+}
+  .link:visited,
+  .link-children a:visited {
+    color: var(--colorLinkDark);
+  }
+  .link:focus,
+  .link:hover,
+  .link-children a:focus,
+  .link-children a:hover {
+    color: var(--colorLinkHover);
+  }
+
+.link--no-decoration,
+.link-children--no-decoration a {
+  text-decoration: none;
+}

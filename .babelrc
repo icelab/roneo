@@ -1,0 +1,22 @@
+{
+  "env": {
+    "development": {
+      "presets": [
+        "babel-preset-es2015",
+        "babel-preset-react"
+      ],
+      "ignore": [
+        "src/**/*.mcss"
+      ]
+    },
+    "test": {
+      "presets": [
+        "babel-preset-es2015",
+        "babel-preset-react"
+      ],
+      "plugins": [
+          ["babel-plugin-css-modules-transform", { "generateScopedName": "[name]__[local]___[hash:base64:5]" }]
+      ]
+    }
+  }
+}

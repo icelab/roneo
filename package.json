@@ -1,0 +1,56 @@
+{
+  "name": "roneo",
+  "version": "0.0.1",
+  "description": "",
+  "homepage": "https://github.com/icelab/roneo",
+  "main": "lib/index.js",
+  "style": "lib/index.css",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/icelab/roneo.git"
+  },
+  "keywords": [],
+  "authors": [
+    "Max Wheeler <max@icelab.com.au> (https://github.com/makenosound)"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/icelab/roneo/issues"
+  },
+  "scripts": {
+    "build": "babel src --out-dir lib",
+    "postbuild": "npm run copycss && npm run lint",
+    "copycss": "rsync -r ./src/* --include='*/' --include='*.css' --include='*.mcss' --exclude='*' lib",
+    "test": "babel-node test | faucet",
+    "lint": "eslint 'src/*.js' 'src/**/*.js' 'test/*.js' 'test/**/*.js'",
+    "posttest": "npm run lint"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.3.17",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "eslint": "^2.3.0",
+    "eslint-config-standard": "^5.1.0",
+    "eslint-config-standard-react": "2.3.0",
+    "eslint-plugin-standard": "^1.3.2",
+    "faucet": "0.0.1",
+    "tape": "^4.2.2"
+  },
+  "dependencies": {
+    "domready": "1.0.8",
+    "es5-shim": "4.5.7",
+    "es6-shim": "0.35.0",
+    "fastclick": "1.0.6",
+    "fontfaceobserver": "1.7.1",
+    "formalist-compose": "icelab/formalist-compose",
+    "formalist-serialize-react": "icelab/formalist-serialize-react",
+    "formalist-standard-react": "icelab/formalist-standard-react",
+    "immutable": "3.7.6",
+    "metaquery": "1.2.5",
+    "viewloader": "1.1.1"
+  },
+  "peerDependencies": {
+    "react": "0.14.8",
+    "react-dom": "0.14.8"
+  }
+}

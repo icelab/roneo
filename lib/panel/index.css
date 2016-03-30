@@ -1,0 +1,61 @@
+@import '../traits';
+
+/* Panel */
+
+.panel {
+  background-color: var(--colorWhite);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
+  border-bottom-left-radius: var(--borderRadiusMedium);
+  border-bottom-right-radius: var(--borderRadiusMedium);
+  display: flex;
+  margin-bottom: var(--spacingXLarge);
+  margin-top: var(--spacingXLarge);
+  padding: var(--spacingXLarge);
+}
+  .breakpoint-tablet .panel,
+  .breakpoint-phone .panel {
+    display: block;
+  }
+  .breakpoint-phone .panel {
+    padding: var(--spacingLarge);
+    margin-top: var(--spacingMedium);
+  }
+
+.tabs + .panel {
+  margin-top: 0;
+}
+
+.panel__primary {
+  flex: 5;
+}
+
+.panel__secondary {
+  margin-left: var(--spacingXLarge);
+  flex: 2;
+}
+  .breakpoint-tablet .panel__secondary,
+  .breakpoint-phone .panel__secondary {
+    margin-top: var(--spacingXLarge);
+    margin-left: 0;
+  }
+
+.panel__left {
+  flex: 3;
+}
+
+.panel__right {
+  flex: 3;
+}
+
+.panel__thirds {
+  flex: 3;
+}
+  .panel__thirds:nth-of-type(2n+0) {
+    margin-left: var(--spacingXLarge);
+    margin-right: var(--spacingXLarge);
+  }
+  .breakpoint-tablet .panel__thirds,
+  .breakpoint-phone .panel__thirds {
+    margin-left: 0;
+    margin-right: 0;
+  }

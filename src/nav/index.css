@@ -1,0 +1,102 @@
+@import '../traits';
+
+/* Nav */
+
+:root {
+  --navWidth: 26rem;
+  --navOpenDuration: 170ms;
+  --navOpenTiming: cubic-bezier(.2,.3,.25,.9);
+}
+
+.nav {
+  bottom: 0;
+  left: 0;
+  max-width: var(--navWidth);
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  position: fixed;
+  top: 0;
+  transform: translate3d(-var(--navWidth), 0, 0);
+  transition-property: transform;
+  transition-duration: var(--navOpenDuration);
+  transition-timing-function: var(--navOpenTiming);
+  z-index: 5;
+}
+  .nav:after {
+    background-image: linear-gradient(to right, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0) 100%);
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition-property: opacity;
+    transition-duration: var(--navOpenDuration);
+    width: 2rem;
+  }
+  .breakpoint-widescreen .nav {
+    padding-top: var(--headerHeightDesktop);
+  }
+  .nav.nav-open {
+    transform: translate3d(0, 0, 0);
+  }
+    .nav.nav-open:after {
+      opacity: 1;
+    }
+  .breakpoint-widescreen .nav {
+    flex: 1;
+    position: relative;
+    transform: none;
+    overflow: visible;
+  }
+
+  .nav__content {
+    padding: var(--spacingXLarge);
+    top: 0;
+    position: sticky;
+  }
+
+/* Group */
+
+.nav-group {
+  padding-bottom: var(--spacingXLarge);
+}
+  .nav-group__header {
+    color: var(--colorGreyMid);
+    font-family: var(--fontPrimaryFallback);
+    font-size: 1.1rem;
+    font-weight: var(--fontWeightPrimaryBold);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+  }
+    .fonts-loaded .nav-group__header {
+      font-family: var(--fontPrimary);
+    }
+
+.nav-list__link {
+  color: var(--colorLinkDark);
+  display: block;
+  text-decoration: none;
+  margin-bottom: var(--spacingXSmall);
+}
+  .nav-list__link:hover,
+  .nav-list__link:focus {
+    color: var(--colorLinkHover);
+    text-decoration: underline;
+  }
+
+
+/* User */
+
+.nav-user {
+  border-top: 0.3rem solid var(--colorGreyLight);
+  font-size: 1.3rem;
+  padding-top: var(--spacingXLarge);
+}
+  .nav-user p {
+    margin-bottom: var(--spacingSmall);
+  }

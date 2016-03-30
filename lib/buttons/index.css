@@ -1,0 +1,87 @@
+@import '../traits';
+
+/* Buttons */
+
+.button {
+  background-color: var(--colorGreyMid);
+  border: none;
+  border-radius: var(--borderRadiusMedium);
+  cursor: pointer;
+  color: var(--colorWhite);
+  display: inline-block;
+  font-family: var(--fontPrimaryFallback);
+  margin-right: 0.3rem;
+  padding: 0.35em 1.2em 0.55em 1.1em;
+  text-decoration: none;
+  text-align: center;
+  transition-property: background-color, border-color, color;
+  transition-duration: 100ms;
+}
+  .fonts-loaded .button {
+    font-family: var(--fontPrimary);
+  }
+
+.button--bold {
+  font-weight: var(--fontWeightPrimaryBold);
+}
+
+.button--primary,
+.button--notice {
+  background-color: var(--colorPrimary);
+}
+  .button--primary:hover,
+  .button--primary:focus,
+  .button--notice:hover,
+  .button--notice:focus {
+    background-color: var(--colorBlueDark);
+  }
+
+.button--success {
+  background-color: var(--colorSuccess);
+}
+  .button--success:hover,
+  .button--success:focus {
+    background-color: color(var(--colorSuccess) shade(20%));
+  }
+
+.button--warning {
+  background-color: var(--colorWarning);
+}
+  .button--warning:hover,
+  .button--warning:focus {
+    background-color: color(var(--colorWarning) shade(20%));
+  }
+
+.button--ghost {
+  background-color: var(--colorWhite);
+  border: 1px solid var(--colorGreyLight);
+  color: var(--colorGreyMid);
+  padding: 0.3em 1.3em 0.55em 1.1em;
+}
+  .button--ghost:hover,
+  .button--ghost:focus {
+    border-color: color(var(--colorGreyLight) shade(10%));
+    background-color: var(--colorGreyLight);
+  }
+
+/* Sizes */
+
+.button--xsmall {
+  font-size: 1.1rem;
+}
+
+.button--small {
+  font-size: 1.3rem;
+}
+
+.button--medium {
+  font-size: 1.5rem;
+}
+
+.button--large {
+  font-size: 1.8rem;
+}
+
+.button--xlarge {
+  font-size: 2rem;
+}

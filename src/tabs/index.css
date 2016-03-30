@@ -1,0 +1,43 @@
+@import '../traits';
+
+/* Tabs */
+
+.tabs {
+  box-shadow: 0 0 3px rgba(0,0,0,0.05);
+  background-color: var(--colorWhite);
+  border-bottom: 1px solid var(--colorGreyLight);
+  border-top-left-radius: var(--borderRadiusMedium);
+  border-top-right-radius: var(--borderRadiusMedium);
+  margin-top: var(--spacingXLarge);
+}
+
+.tab {
+  border-right: 1px solid var(--colorGreyLight);
+  color: var(--colorLink);
+  display: inline-block;
+  padding: 1.8rem var(--spacingXLarge) 2.2rem;
+  margin-bottom: -1px;
+  text-decoration: none;
+}
+  .tab:first-child {
+    border-top-left-radius: var(--borderRadiusMedium);
+  }
+  .tab:last-child {
+    border-right-width: 0;
+  }
+
+  .tab:hover,
+  .tab:focus {
+    color: var(--colorLinkHover);
+    text-decoration: underline;
+  }
+
+  .tab--active,
+  .tab--active:hover,
+  .tab--active:focus {
+    background-color: var(--colorWhite);
+    color: var(--colorGreyDark);
+  }
+    .tab--active:last-child {
+      border-right-width: 1px;
+    }

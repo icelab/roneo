@@ -1,0 +1,190 @@
+@import "../traits";
+
+/* Define styles for blocks of content scoped within the .copy rather than
+ * making them global. Global styles will be constantly overridden.
+ *
+ *      <div class="copy your-content-area">
+ */
+
+/* Set the baseline on all elements directly inside a copy block
+ * Margin won't work on inline elements anyway
+ */
+
+.copy {
+  line-height: 1.4;
+}
+
+.copy > *,
+.copy > blockquote > *,
+.copy section > *,
+.copy section > blockquote > * {
+  margin-bottom: 0.7rem;
+}
+
+.copy > hr {
+  margin-top: 1.7rem;
+  margin-bottom: 1em;
+}
+
+/* Leading quotes
+---------------------------------------- */
+
+.copy .quo {
+  margin-left: -0.2em;
+}
+.copy .dquo {
+  margin-left: -0.3em;
+}
+
+
+/* Block Elements
+---------------------------------------- */
+
+.copy > blockquote {
+  border-left: 2px solid var(--colorGreyLight);
+  color: var(--colorGreyMid);
+  font-size: 1.6rem;
+  line-height: 1.45;
+  padding-left: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  clear: both;
+}
+
+.copy > hr {
+  border: none;
+  border-bottom: 1px solid var(--colorGreyLight);
+  clear: both;
+}
+
+
+/* Lists
+---------------------------------------- */
+
+.copy > ul,
+.copy > ol {
+  margin-left: 1.6em;
+}
+.copy > ul > li {
+  list-style-type: disc;
+}
+
+.copy > ol {
+  margin-left: 1.6em;
+}
+.copy > ol > li {
+  list-style-type: decimal;
+}
+
+.copy > ul > li,
+.copy > ol > li {
+  display: list-item;
+  margin-bottom: 0.4rem;
+}
+
+/* Headings
+---------------------------------------- */
+
+.copy > h1,
+.copy > h2,
+.copy > h3,
+.copy > h4,
+.copy > h5,
+.copy > h6 {
+  font-weight: var(--fontWeightPrimaryBold);
+}
+  .copy > h1 a,
+  .copy > h2 a,
+  .copy > h3 a,
+  .copy > h4 a,
+  .copy > h5 a,
+  .copy > h6 a {
+    text-decoration: none;
+  }
+  .copy > h1 a:hover,
+  .copy > h1 a:focus,
+  .copy > h2 a:hover,
+  .copy > h2 a:focus,
+  .copy > h3 a:hover,
+  .copy > h3 a:focus,
+  .copy > h4 a:hover,
+  .copy > h4 a:focus,
+  .copy > h5 a:hover,
+  .copy > h5 a:focus,
+  .copy > h6 a:hover,
+  .copy > h6 a:focus {
+    text-decoration: underline;
+  }
+
+.copy > p + h1,
+.copy > p + h2,
+.copy > p + h3,
+.copy > p + h4,
+.copy > p + h5,
+.copy > p + h6 {
+  padding-top: 0.8em;
+}
+
+.copy .h-1 {
+  font-size: 2.4rem;
+}
+
+.copy .h-2 {
+  font-size: 1.8rem;
+}
+
+.copy .h-3 {
+  font-size: 1.6rem;
+}
+
+.copy .h-4,
+.copy .h-5 {
+  font-size: 1.5rem;
+}
+
+
+/* Inline Elements
+---------------------------------------- */
+
+.copy em {
+  font-style: italic;
+}
+
+.copy strong {
+  font-weight: bold;
+}
+
+.copy img,
+.copy video,
+.copy embed,
+.copy iframe {
+  max-width: 100%;
+}
+
+/* Links
+---------------------------------------- */
+
+.copy > p a,
+.copy > blockquote a,
+.copy > ul li a,
+.copy > ol li a {
+  color: var(--colorLink);
+  text-decoration: underline;
+}
+
+.copy > p a:visited,
+.copy > blockquote a:visited,
+.copy > ul li a:visited {
+  color: var(--colorLinkDark);
+}
+
+.copy > p a:hover,
+.copy > p a:focus,
+.copy > blockquote a:hover,
+.copy > blockquote a:focus,
+.copy > ul li a:hover,
+.copy > ul li a:focus
+.copy > ol li a:hover,
+.copy > ol li a:focus {
+  color: var(--colorLinkHover);
+}

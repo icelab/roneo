@@ -1,0 +1,41 @@
+@import '../traits';
+
+/* Labels */
+
+.label {
+  background-color: var(--colorGreyMid);
+  border-radius: var(--borderRadiusMedium);
+  color: var(--colorWhite);
+  display: inline-block;
+  font-family: var(--fontPrimaryFallback);
+  font-size: 1.1rem;
+  font-weight: var(--fontWeightPrimaryBold);
+  letter-spacing: 0.2em;
+  margin-right: 0.3rem;
+  padding: 0.3rem 0.8rem 0.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+  .fonts-loaded .label {
+    font-family: var(--fontPrimary);
+  }
+
+.label--primary,
+.label--notice {
+  background-color: var(--colorPrimary);
+}
+
+.label--success {
+  background-color: var(--colorSuccess);
+}
+
+.label--warning {
+  background-color: var(--colorWarning);
+}
+
+.label--ghost {
+  background-color: var(--colorWhite);
+  border: 1px solid var(--colorGreyLight);
+  color: var(--colorGreyMid);
+  padding: 0.2rem 0.8rem 0.5rem;
+}
