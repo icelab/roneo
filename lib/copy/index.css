@@ -42,7 +42,7 @@
 
 .copy > blockquote {
   border-left: 2px solid var(--colorGreyLight);
-  color: var(--colorGreyMid);
+  color: var(--colorGrey);
   font-size: 1.6rem;
   line-height: 1.45;
   padding-left: 2rem;

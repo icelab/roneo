@@ -65,7 +65,7 @@
   padding-bottom: var(--spacingXLarge);
 }
   .nav-group__header {
-    color: var(--colorGreyMid);
+    color: var(--colorGrey);
     font-family: var(--fontPrimaryFallback);
     font-size: 1.1rem;
     font-weight: var(--fontWeightPrimaryBold);
