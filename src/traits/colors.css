@@ -9,7 +9,8 @@
   --colorGreen:      #2ca476;
   --colorGreySubtle: #f6f6f6;
   --colorGreyLight:  #eaeaea;
-  --colorGreyMid:    #747474;
+  --colorGreyMid:    #ccc;
+  --colorGrey:       #747474;
   --colorGreyDark:   #4a4a4a;
   --colorPrimary:    var(--colorBlue);
   --colorNotice:     var(--colorBlue);
@@ -104,7 +105,7 @@
 /* Grey mid */
 
 .c-grey-mid {
-  background-color: var(--colorGreyMid);
+  color: var(--colorGreyMid);
 }
 
 .bgc-grey-mid {
@@ -113,6 +114,21 @@
 
 .bc-grey-mid {
   border-color: var(--colorGreyMid);
+}
+
+
+/* Grey */
+
+.c-grey {
+  color: var(--colorGrey);
+}
+
+.bgc-grey {
+  background-color: var(--colorGrey);
+}
+
+.bc-grey {
+  border-color: var(--colorGrey);
 }
 
 /* Grey dark */

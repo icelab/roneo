@@ -3,7 +3,7 @@
 /* Labels */
 
 .label {
-  background-color: var(--colorGreyMid);
+  background-color: var(--colorGrey);
   border-radius: var(--borderRadiusMedium);
   color: var(--colorWhite);
   display: inline-block;
@@ -36,6 +36,6 @@
 .label--ghost {
   background-color: var(--colorWhite);
   border: 1px solid var(--colorGreyLight);
-  color: var(--colorGreyMid);
+  color: var(--colorGrey);
   padding: 0.2rem 0.8rem 0.5rem;
 }

@@ -3,7 +3,7 @@
 /* Buttons */
 
 .button {
-  background-color: var(--colorGreyMid);
+  background-color: var(--colorGrey);
   border: none;
   border-radius: var(--borderRadiusMedium);
   cursor: pointer;
@@ -55,7 +55,7 @@
 .button--ghost {
   background-color: var(--colorWhite);
   border: 1px solid var(--colorGreyLight);
-  color: var(--colorGreyMid);
+  color: var(--colorGrey);
   padding: 0.3em 1.3em 0.55em 1.1em;
 }
   .button--ghost:hover,
