@@ -9,7 +9,7 @@ window.metaQuery = metaQuery
 /**
  * Intended to be inlined and injected in to the <head> of the page
  */
-export default function inlineHeader (options) {
+export default function inlineHeader (options = {}) {
   /**
    * Check if fonts are cached
    */
