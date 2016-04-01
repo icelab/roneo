@@ -47,6 +47,7 @@ body {
 @import './header';
 @import './links';
 @import './labels';
+@import './minimal';
 @import './nav';
 @import './page';
 @import './panel';

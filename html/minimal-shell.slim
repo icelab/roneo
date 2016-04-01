@@ -1,0 +1,21 @@
+html lang="en"
+  head
+    meta charset="utf-8"
+    == page.breakpoints
+    / Inlined JavaScript
+    script
+      == page.assets.read("inline-admin-boot-header.js")
+    / Your admin CSS
+    link rel="stylesheet" type="text/css" href=page.assets["admin.css"]
+    / Your admin JS
+    script type="text/javascript" src=page.assets["admin.js"]
+    title Admin
+    == page.csrf_metatag
+  body data-view-fast-click=true data-view-disable-input-zoom=true
+    / Flash messages go here ./flash.slim
+    / Main
+    .minimal role="main"
+      == yield
+    / Inlined JS
+    script
+      == page.assets.read("inline-admin-boot-footer.js")
