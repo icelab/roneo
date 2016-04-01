@@ -36,7 +36,7 @@ html lang="en"
     header.header role="header"
       button.nav-toggle.hide-widescreen data-view-toggle-class=JSON.generate({ \
         event: "click", \
-        targetSelector: ".nav, .page, .header, .page-overlay", \
+        targetSelector: ".nav, .page, .header, .page-overlay, .flash", \
         targetToggleClassName: "nav-open", \
         triggerToggleClassName: "nav-toggle--nav-open" })
         span.f-fallthrough> &larr;
@@ -53,7 +53,7 @@ html lang="en"
         == yield
     button.page-overlay.hide-widescreen data-view-toggle-class=JSON.generate({ \
       event: "click", \
-      targetSelector: ".nav, .page, .header, .page-overlay", \
+      targetSelector: ".nav, .page, .header, .page-overlay, .flash", \
       targetToggleClassName: "nav-open", \
       triggerToggleClassName: "nav-toggle--nav-open" })
         span.hide-visually Toggle nav
