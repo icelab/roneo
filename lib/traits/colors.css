@@ -21,6 +21,19 @@
   --colorLinkHover:  var(--colorRed);
 }
 
+/* White */
+
+.c-white {
+  color: var(--colorWhite);
+}
+
+.bgc-white {
+  background-color: var(--colorWhite);
+}
+
+.bc-white {
+  border-color: var(--colorWhite);
+}
 /* Blue, notice */
 
 .c-blue,

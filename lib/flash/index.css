@@ -1,0 +1,32 @@
+/**
+ * Flash messages
+ */
+
+.flash {
+  height: 0;
+  left: 2rem;
+  position: fixed;
+  right: 2rem;
+  top: 2rem;
+  z-index: 100;
+}
+  .flash__message {
+    box-shadow: 0 3px 3px rgba(255, 255, 255, 0.5);
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50rem;
+    opacity: 0.95;
+    transform: translate3d(0, 0, 0);
+    transition-property: opacity, transform;
+    transition-duration: 100ms;
+    transition-timing-function: cubic-bezier(0.79, 0.04, 0.27, 1);
+  }
+    .flash__message--hidden {
+      transform: translate3d(0, -100px, 0);
+      opacity: 0;
+    }
+
+  .flash button {
+    outline: none;
+  }
