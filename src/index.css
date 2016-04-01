@@ -43,6 +43,7 @@ body {
 
 @import './buttons';
 @import './copy';
+@import './flash';
 @import './header';
 @import './links';
 @import './labels';

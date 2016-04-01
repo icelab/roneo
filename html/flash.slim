@@ -1,0 +1,11 @@
+.flash.c-white
+  .flash__message.bgc-notice.clearfix.px-large.py-medium.br-medium
+    p.fl-left Your message goes here.
+    button.flash__dismiss.fl-right data-view-toggle-class=JSON.generate({ \
+      event: "click", \
+      triggerAfter: 8000, \
+      targetSelector: ".flash__message", \
+      targetLoadClassName: "flash__message--hidden", \
+      targetToggleClassName: "flash__message--hidden" })
+      span.hide-all Dismiss
+      span.flash__x.f-fallthrough.t-large ×
