@@ -1,0 +1,8 @@
+/**
+ * Minimal layout wrapper
+ */
+
+.minimal {
+  display: block;
+  width: 100%;
+}

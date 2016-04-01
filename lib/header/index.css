@@ -45,7 +45,7 @@
     }
 
     .breakpoint-phone .header {
-      background-color: var(--colorGreySubtle);
+      background-color: var(--colorGreyHint);
       height: var(--headerHeightPhone);
       padding-left: var(--spacingMedium);
       padding-right: var(--spacingMedium);
