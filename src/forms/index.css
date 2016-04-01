@@ -1,0 +1,50 @@
+@import '../traits';
+
+.form-input {
+  color: var(--colorGreyDark);
+  border-color: var(--colorGreyMid);
+  background-color: var(--colorGreyHint);
+  box-shadow: inset 0px 2px 0px 0px rgba(20,15,10,0.03);
+  border-width: 0;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-radius: 0;
+  font-family: var(--fontPrimaryFallback);
+  font-size: 1.5rem;
+  padding: 0.6em 0.7em 0.8em;
+  width: 100%;
+  transition-property: border-color, background-color;
+  transition-duration: 100ms;
+}
+  .form-input:focus {
+    color: var(--colorDarkBlend);
+    border-color: var(--colorBlue);
+    background-color: var(--colorBlueHint);
+    outline: none;
+  }
+    .form-input:focus::placeholder {
+      color: lightBlend;
+    }
+
+.form-input--error {
+  color: var(--colorWarning);
+  border-color: var(--colorWarning);
+  background-color: var(--colorWarningLight);
+}
+    .form-input--error::placeholder {
+      color: rgba(0,0,0,0.2);
+    }
+
+.form-label {
+  display: inline-block;
+  font-family: var(--fontPrimaryFallback);
+  font-weight: var(--fontWeightPrimaryBold);
+}
+  .form-label--error {
+    color: var(--colorWarning);
+  }
+
+.fonts-loaded .form-input,
+.fonts-loaded .form-label {
+  font-family: var(--fontPrimary);
+}
