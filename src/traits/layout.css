@@ -21,3 +21,26 @@
   float: right;
 }
 
+/**
+ * Display
+ */
+
+.d-inline {
+  display: inline;
+}
+
+.d-inlineblock {
+  display: inline-block;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-table {
+  display: table;
+}
+
+.d-flex {
+  display: flex;
+}
