@@ -1,6 +1,8 @@
 @import './fonts';
 
-/* Type */
+/**
+ * Globals
+ */
 
 strong {
   font-weight: bold;
@@ -10,7 +12,9 @@ em {
   font-style: italic;
 }
 
-/* Headings */
+/**
+ * Headings
+ */
 
 .h-1,
 .h-2,
@@ -53,7 +57,9 @@ em {
   text-transform: uppercase;
 }
 
-/* */
+/**
+ * Type adjustments
+ */
 
 .t-center {
   text-align: center;
@@ -82,4 +88,50 @@ em {
 
 .t-no-decoration {
   text-decoration: none;
+}
+
+/**
+ * Sizes
+ */
+
+.t-xsmall {
+  font-size: 1.2rem;
+}
+
+.t-small {
+  font-size: 1.3rem;
+}
+
+.t-medium {
+  font-size: 1.5rem;
+}
+
+.t-large {
+  font-size: 1.8rem;
+}
+
+.t-xlarge {
+  font-size: 2.4rem;
+}
+
+/* Relative */
+
+.t-xsmall-rel {
+  font-size: 0.8em;
+}
+
+.t-small-rel {
+  font-size: 0.86em;
+}
+
+.t-medium-rel {
+  font-size: 1em;
+}
+
+.t-large-rel {
+  font-size: 1.2em;
+}
+
+.t-xlarge-rel {
+  font-size: 1.6em;
 }
