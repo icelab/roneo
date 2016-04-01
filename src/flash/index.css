@@ -5,11 +5,17 @@
 .flash {
   height: 0;
   left: 2rem;
-  position: fixed;
+  position: absolute;
   right: 2rem;
   top: 2rem;
+  transform: translate3d(0, 0, 0);
+  transition-duration: var(--navOpenDuration);
+  transition-property: transform;
   z-index: 100;
 }
+  .flash.nav-open {
+    transform: translate3d(var(--navWidth), 0, 0);
+  }
   .flash__message {
     box-shadow: 0 3px 3px rgba(255, 255, 255, 0.5);
     margin-bottom: 1rem;
