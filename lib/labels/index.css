@@ -12,7 +12,7 @@
   font-weight: var(--fontWeightPrimaryBold);
   letter-spacing: 0.2em;
   margin-right: 0.3rem;
-  padding: 0.3rem 0.8rem 0.5rem;
+  padding: 0.4rem 0.8rem 0.4rem;
   text-align: center;
   text-transform: uppercase;
 }
@@ -37,5 +37,4 @@
   background-color: var(--colorWhite);
   border: 1px solid var(--colorGreyLight);
   color: var(--colorGrey);
-  padding: 0.2rem 0.8rem 0.5rem;
 }

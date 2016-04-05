@@ -11,7 +11,7 @@
   display: inline-block;
   font-family: var(--fontPrimaryFallback);
   margin-right: 0.3rem;
-  padding: 0.35em 1.2em 0.55em 1.1em;
+  padding: 0.45em 1.2em 0.45em 1.1em;
   text-decoration: none;
   text-align: center;
   transition-property: background-color, border-color, color;
@@ -56,7 +56,6 @@
   background-color: var(--colorWhite);
   border: 1px solid var(--colorGreyLight);
   color: var(--colorGrey);
-  padding: 0.3em 1.3em 0.55em 1.1em;
 }
   .button--ghost:hover,
   .button--ghost:focus {
