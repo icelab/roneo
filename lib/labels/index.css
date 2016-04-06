@@ -38,3 +38,9 @@
   border: 1px solid var(--colorGreyLight);
   color: var(--colorGrey);
 }
+
+.label--preview {
+  background-color: var(--colorGreyLight);
+  color: var(--colorGreyDark);
+  padding: 0.2rem 0.8rem 0.5rem;
+}

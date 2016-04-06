@@ -63,6 +63,27 @@
     background-color: var(--colorGreyLight);
   }
 
+.button--preview {
+  background-color: var(--colorGreyLight);
+  color: var(--colorGreyDark);
+}
+  .button--preview:hover,
+  .button--preview:focus {
+    background-color: color(var(--colorGreyLight) shade(10%));
+    color: var(--colorDark);
+  }
+
+.button--delete {
+  background-color: var(--colorWhite);
+  border: 1px solid var(--colorRed);
+  color: var(--colorRed);
+}
+  .button--delete:hover,
+  .button--delete:focus {
+    background-color: var(--colorRed);
+    color: var(--colorWhite);
+  }
+
 /* Sizes */
 
 .button--xsmall {
