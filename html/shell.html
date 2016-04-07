@@ -25,7 +25,7 @@
   <body data-view-fast-click data-view-disable-input-zoom>
     <!-- Flash message go here ./flash.html -->
     <!-- Nav -->
-    <nav class="nav" role="nav">
+    <nav class="nav nav-aware" role="nav">
       <div class="nav__content">
         <div class="nav-group">
           <h2 class="nav-group__header">Admin</h2>
@@ -47,7 +47,7 @@
     </nav>
 
     <!-- Header -->
-    <header class="header" role="header">
+    <header class="header nav-aware" role="header">
       <button
         class="nav-toggle hide-widescreen"
         data-view-toggle-class="{&quot;event&quot;:&quot;click&quot;,&quot;targetSelector&quot;:&quot;.nav, .page, .header, .page-overlay, .flash&quot;,&quot;targetToggleClassName&quot;:&quot;nav-open&quot;,&quot;triggerToggleClassName&quot;:&quot;nav-toggle--nav-open&quot;}">
@@ -64,13 +64,13 @@
     </header>
 
     <!-- Main -->
-    <div class="page" role="main">
+    <div class="page nav-aware" role="main">
       <div class="page__contents">
         ... content goes here.
       </div>
     </div>
     <button
-      class="page-overlay hide-widescreen"
+      class="page-overlay nav-aware hide-widescreen"
       data-view-toggle-class="{&quot;event&quot;:&quot;click&quot;,&quot;targetSelector&quot;:&quot;.nav, .page, .header, .page-overlay, .flash&quot;,&quot;targetToggleClassName&quot;:&quot;nav-open&quot;,&quot;triggerToggleClassName&quot;:&quot;nav-toggle--nav-open&quot;}">
       <span class="hide-visually">Toggle nav</span>
     </button>

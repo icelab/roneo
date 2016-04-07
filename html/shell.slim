@@ -14,7 +14,7 @@ html lang="en"
   body data-view-fast-click=true data-view-disable-input-zoom=true
     / Flash messages go here ./flash.slim
     / Nav
-    nav.nav role="nav"
+    nav.nav.nav-aware role="nav"
       .nav__content
         .nav-group
           h2.nav-group__header Admin
@@ -33,7 +33,7 @@ html lang="en"
 
 
     / Header
-    header.header role="header"
+    header.header.nav-aware role="header"
       button.nav-toggle.hide-widescreen data-view-toggle-class=JSON.generate({ \
         event: "click", \
         targetSelector: ".nav, .page, .header, .page-overlay, .flash", \
@@ -48,10 +48,10 @@ html lang="en"
         / Additional header nav items go here
 
     / Main
-    .page role="main"
+    .page.nav-aware role="main"
       .page__contents
         == yield
-    button.page-overlay.hide-widescreen data-view-toggle-class=JSON.generate({ \
+    button.page-overlay.nav-aware.hide-widescreen data-view-toggle-class=JSON.generate({ \
       event: "click", \
       targetSelector: ".nav, .page, .header, .page-overlay, .flash", \
       targetToggleClassName: "nav-open", \

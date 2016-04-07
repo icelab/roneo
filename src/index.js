@@ -1,13 +1,28 @@
-import domready from 'domready'
+import 'turbolinks'
 import viewloader from 'viewloader'
 
 // Components
 import views from './views'
 
+function removeNavOpenClasses () {
+  // Remove any `.nav-aware` classes when widescreen
+  let navAwareEls = Array.prototype.slice.call(
+    document.querySelectorAll('.nav-aware')
+  )
+  navAwareEls.map((el) => {
+    el.classList.remove('nav-open')
+  })
+}
+
 export default function roneo () {
-  // Kick off
-  domready(function onDomReady () {
+  // DOMContentLoaded equivalent with Turbolinks
+  document.addEventListener('turbolinks:load', function onTurboLinksLoad () {
     viewloader.execute(views)
+  })
+
+  // Hide nav when navigating
+  document.addEventListener('turbolinks:request-start', () => {
+    setTimeout(removeNavOpenClasses, 50)
   })
 
   /**
@@ -17,13 +32,7 @@ export default function roneo () {
   if (window.metaQuery) {
     window.metaQuery.onBreakpointChange('widescreen', function onBreakpointChangeWidescreen (matches) {
       if (matches) {
-        // Remove any `.nav-open` classes when widescreen
-        var navOpenElements = Array.prototype.slice.call(
-          document.querySelectorAll('.nav-open')
-        )
-        navOpenElements.map((el) => {
-          el.classList.remove('nav-open')
-        })
+        removeNavOpenClasses()
       }
     })
   }
