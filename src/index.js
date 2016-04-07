@@ -23,6 +23,8 @@ export default function roneo () {
   // Hide nav when navigating
   document.addEventListener('turbolinks:request-start', () => {
     setTimeout(removeNavOpenClasses, 50)
+    let pageEl = document.querySelector('.page')
+    pageEl.classList.add('page--inactive')
   })
 
   /**

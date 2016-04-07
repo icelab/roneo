@@ -6,13 +6,17 @@
   padding-top: var(--headerHeightDesktop);
   padding-bottom: var(--spacingXLarge);
   position: relative;
+  opacity: 1;
   height: 100%;
-  transition-property: transform;
+  transition-property: transform, opacity;
   transition-duration: var(--navOpenDuration);
   transition-timing-function: var(--navOpenTiming);
   position: relative;
   z-index: 2;
 }
+  .page--inactive {
+    opacity: 0.5;
+  }
   .page.nav-open {
     transform: translate3d(var(--navWidth), 0, 0);
   }
