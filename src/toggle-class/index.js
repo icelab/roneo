@@ -4,6 +4,7 @@
  * `props.event-ed` (click for example)
  */
 export default function toggleClass (el, props) {
+  let triggered = false
   const defaults = {
     event: 'click',
     preventDefault: true
@@ -15,8 +16,10 @@ export default function toggleClass (el, props) {
 
   // Remove the loadClass on initialisation
   if (options.targetLoadClassName) {
-    targets.forEach((target) => {
-      target.classList.remove(options.targetLoadClassName)
+    window.requestAnimationFrame(() => {
+      targets.forEach((target) => {
+        target.classList.remove(options.targetLoadClassName)
+      })
     })
   }
 
@@ -31,12 +34,16 @@ export default function toggleClass (el, props) {
     if (options.triggerToggleClassName) {
       el.classList.toggle(options.triggerToggleClassName)
     }
+    triggered = true
   })
 
   // Trigger after timeout
   if (options.triggerAfter) {
     setTimeout(() => {
-      el[options.event]()
+      if (triggered === false) {
+        el[options.event]()
+        triggered = true
+      }
     }, options.triggerAfter)
   }
 }
