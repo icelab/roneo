@@ -21,6 +21,7 @@ export default function confirmAction (el, props) {
       const form = document.createElement('form')
       form.setAttribute('method', formMethod)
       form.setAttribute('action', action)
+      form.style.display = 'none'
 
       // Append the CRSF token if it exists
       if (props.method !== 'GET') {
@@ -43,6 +44,7 @@ export default function confirmAction (el, props) {
         form.appendChild(input)
       }
 
+      document.querySelector('body').appendChild(form)
       form.submit()
     }
   }
