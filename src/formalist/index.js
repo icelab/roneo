@@ -60,7 +60,7 @@ FormWrapper.propTypes = {
  * @param  {AST} ast Formalist compatible abstract syntax tree
  */
 export default function formalist (el, props) {
-  let configuredTemplate = template()
+  let configuredTemplate = template(null, props.config)
   let form = configuredTemplate(props.ast)
   ReactDOM.render(<FormWrapper form={form} prefix={props.prefix} />, el)
 }
