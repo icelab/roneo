@@ -14,7 +14,7 @@ export default function fontsLoaded (fontsToCheck) {
     fontsToCheck.forEach((font) => {
       const promise = new window.FontFaceObserver(font.family, {
         weight: font.weight,
-        style: font.style
+        style: font.style,
       })
       loading.push(promise.check())
     })

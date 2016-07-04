@@ -7,7 +7,7 @@ export default function toggleClass (el, props) {
   let triggered = false
   const defaults = {
     event: 'click',
-    preventDefault: true
+    preventDefault: true,
   }
   const options = Object.assign(defaults, props)
   const targets = Array.prototype.slice.call(

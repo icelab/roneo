@@ -2,7 +2,6 @@ import React, { Component, PropTypes } from 'react'
 import ReactDOM from 'react-dom'
 import Immutable from 'immutable'
 import template from 'formalist-standard-react'
-import composeForm from 'formalist-compose'
 import serialize from 'formalist-serialize-react'
 
 /**
@@ -13,13 +12,8 @@ class FormWrapper extends Component {
   constructor (props) {
     super(props)
     const form = this.props.form
-    this.serializedFormTemplate = composeForm(
-      serialize({
-        prefix: props.prefix
-      })
-    )
     this.state = {
-      formState: form.store.getState()
+      formState: form.store.getState(),
     }
   }
 
@@ -27,7 +21,7 @@ class FormWrapper extends Component {
     const form = this.props.form
     form.store.subscribe(() => {
       this.setState({
-        formState: form.store.getState()
+        formState: form.store.getState(),
       })
     })
   }
@@ -37,13 +31,12 @@ class FormWrapper extends Component {
   }
 
   render () {
-    const form = this.props.form
-    const { formState } = this.state
-    const serializedForm = this.serializedFormTemplate(formState)
+    const {form, prefix} = this.props
+    const {formState} = this.state
     return (
       <div>
         {form.render()}
-        {serializedForm.render()}
+        {serialize(formState, { prefix })}
       </div>
     )
   }
@@ -51,7 +44,7 @@ class FormWrapper extends Component {
 
 FormWrapper.propTypes = {
   form: PropTypes.object.isRequired,
-  prefix: PropTypes.string
+  prefix: PropTypes.string,
 }
 
 /**
