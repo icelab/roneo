@@ -41,7 +41,6 @@
     "es6-shim": "0.35.0",
     "fastclick": "1.0.6",
     "fontfaceobserver": "1.7.1",
-    "formalist-compose": "icelab/formalist-compose",
     "formalist-serialize-react": "icelab/formalist-serialize-react",
     "formalist-standard-react": "icelab/formalist-standard-react",
     "immutable": "3.7.6",

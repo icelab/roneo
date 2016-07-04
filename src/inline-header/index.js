@@ -22,9 +22,9 @@ export default function inlineHeader (options = {}) {
     google: {
       families: [
         'Work+Sans:400,600:latin',
-        'Inconsolata::latin'
-      ]
-    }
+        'Inconsolata::latin',
+      ],
+    },
   }
   // Allow additional Google Fonts families to be passed in
   if (options.families) {

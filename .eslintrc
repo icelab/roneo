@@ -1,0 +1,21 @@
+{
+  parserOptions: {
+    ecmaVersion: 6,
+    ecmaFeatures: {
+      jsx: true
+    },
+    sourceType: "module"
+  },
+  rules: {
+    "comma-dangle": [2, "always-multiline"]
+  },
+  extends: [
+    "standard",
+    "standard-react"
+  ],
+  plugins: [
+    "standard",
+    "react"
+  ]
+}
+

@@ -24,5 +24,5 @@ export default {
   disableInputZoom,
   fastClick,
   formalist,
-  toggleClass
+  toggleClass,
 }
