@@ -44,7 +44,9 @@
     "formalist-serialize-react": "icelab/formalist-serialize-react",
     "formalist-standard-react": "icelab/formalist-standard-react",
     "immutable": "3.7.6",
+    "lodash.debounce": "4.0.7",
     "metaquery": "1.2.5",
+    "ric": "1.3.0",
     "turbolinks": "5.0.0-beta4",
     "viewloader": "1.1.1"
   },
