@@ -1,4 +1,5 @@
 import 'turbolinks'
+import domready from 'domready'
 import viewloader from 'viewloader'
 
 // Components
@@ -15,9 +16,14 @@ function removeNavOpenClasses () {
 }
 
 export default function roneo () {
-  // DOMContentLoaded equivalent with Turbolinks
-  document.addEventListener('turbolinks:load', function onTurboLinksLoad () {
+  domready(function onDomready () {
     viewloader.execute(views)
+  })
+  // DOMContentLoaded equivalent with Turbolinks
+  document.addEventListener('turbolinks:render', function onTurboLinksLoad () {
+    viewloader.execute(views)
+    let pageEl = document.querySelector('.page')
+    pageEl.classList.remove('page--inactive')
   })
 
   // Hide nav when navigating
