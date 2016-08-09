@@ -1,8 +1,13 @@
-import React, { Component, PropTypes } from 'react'
+import React, {
+  Component,
+  PropTypes,
+} from 'react'
 import ReactDOM from 'react-dom'
 import Immutable from 'immutable'
 import template from 'formalist-standard-react'
 import serialize from 'formalist-serialize-react'
+import debounce from 'lodash.debounce'
+import 'ric'
 
 /**
  * Simple wrapper to create the form outer
@@ -11,19 +16,43 @@ class FormWrapper extends Component {
 
   constructor (props) {
     super(props)
-    const form = this.props.form
+    const {form} = this.props
+    const formState = form.store.getState()
+    const serialized = this.serializeForm(formState)
     this.state = {
-      formState: form.store.getState(),
+      formState,
+      serialized,
     }
   }
 
   componentWillMount () {
-    const form = this.props.form
-    form.store.subscribe(() => {
-      this.setState({
-        formState: form.store.getState(),
-      })
-    })
+    const {form} = this.props
+    form.store.subscribe(
+      // Debounce the reducer
+      debounce(
+        () => {
+          // Wait for an idle callback to trigger the serialized render
+          // as it’s less important and more expensive
+          window.requestUserIdle(() => {
+            const formState = form.store.getState()
+            const serialized = this.serializeForm(formState)
+            this.setState({
+              formState,
+              serialized,
+            })
+          })
+        }, 250
+      )
+    )
+  }
+
+  serializeForm (formState) {
+    const {prefix} = this.props
+    formState = formState || this.props.form.store.getState()
+    return serialize(
+      formState.toJS(),
+      {prefix}
+    )
   }
 
   shouldComponentUpdate (nextProps, nextState) {
@@ -31,12 +60,12 @@ class FormWrapper extends Component {
   }
 
   render () {
-    const {form, prefix} = this.props
-    const {formState} = this.state
+    const {form} = this.props
+    const {serialized} = this.state
     return (
       <div>
         {form.render()}
-        {serialize(formState, { prefix })}
+        {serialized}
       </div>
     )
   }
