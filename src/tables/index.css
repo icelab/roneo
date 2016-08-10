@@ -13,6 +13,10 @@
     width: 100%;
   }
 
+  .table--top-border {
+    border-top: 0.3rem solid var(--colorGreyLight);
+  }
+
   .table--bottom-border {
     border-bottom: 0.3rem solid var(--colorGreyLight);
   }
@@ -92,4 +96,18 @@
   pointer-events: none;
   top: -0.2rem;
   width: 0;
+}
+
+/* Alignment */
+
+.va-top {
+  vertical-align: top;
+}
+
+.va-middle {
+  vertical-align: middle;
+}
+
+.va-bottom {
+  vertical-align: bottom;
 }
