@@ -1,0 +1,21 @@
+/* Borders */
+
+.b-top-1 {
+  border-top-width: 1px;
+  border-top-style: solid;
+}
+
+.b-bottom-1 {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+.b-left-1 {
+  border-left-width: 1px;
+  border-left-style: solid;
+}
+
+.b-right-1 {
+  border-right-width: 1px;
+  border-right-style: solid;
+}
