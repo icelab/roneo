@@ -8,6 +8,8 @@ export default function confirmAction (el, props) {
   const action = props.action
 
   function onClick (e) {
+    // Don't do anything if we can’t work out the action
+    if (action == null) return
     if (e.preventDefault) {
       e.preventDefault()
     }
