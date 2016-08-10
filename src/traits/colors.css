@@ -59,6 +59,20 @@
   border-color: var(--colorBlue);
 }
 
+/* Blue hint */
+
+.c-blue-hint {
+  color: var(--colorBlueHint);
+}
+
+.bgc-blue-hint {
+  background-color: var(--colorBlueHint);
+}
+
+.bc-blue-hint {
+  border-color: var(--colorBlueHint);
+}
+
 /* Blue dark */
 
 .c-blue-dark {
@@ -105,6 +119,20 @@
 .bc-green,
 .bc-success {
   background-color: var(--colorGreen);
+}
+
+/* Grey hint */
+
+.c-grey-hint {
+  color: var(--colorGreyHint);
+}
+
+.bgc-grey-hint {
+  background-color: var(--colorGreyHint);
+}
+
+.bc-grey-hint {
+  border-color: var(--colorGreyHint);
 }
 
 /* Grey light */
