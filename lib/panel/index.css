@@ -12,11 +12,11 @@
 }
   .breakpoint-tablet .panel,
   .breakpoint-phone .panel {
-    display: block;
+    flex-direction: column;
   }
   .breakpoint-phone .panel {
-    padding: var(--spacingLarge);
     margin-top: var(--spacingMedium);
+    padding: var(--spacingLarge);
   }
 
 .tabs + .panel {
@@ -35,6 +35,12 @@
   .breakpoint-phone .panel__secondary {
     margin-top: var(--spacingXLarge);
     margin-left: 0;
+    width: 100%;
+  }
+  .breakpoint-tablet .panel__secondary[class*="fb-order-1"],
+  .breakpoint-phone .panel__secondary[class*="fb-order-1"] {
+    margin-bottom: var(--spacingXLarge);
+    margin-top: auto;
   }
 
 .panel__left {

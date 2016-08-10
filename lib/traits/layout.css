@@ -53,3 +53,39 @@
   display: flex;
   align-items: center;
 }
+
+.fb-order-1,
+.breakpoint-widescreen .fb-order-1--widescreen,
+.breakpoint-desktop .fb-order-1--desktop,
+.breakpoint-tablet-wide .fb-order-1--tablet-wide,
+.breakpoint-tablet .fb-order-1--tablet,
+.breakpoint-phone .fb-order-1--phone {
+  order: 1;
+}
+
+.fb-order-2,
+.breakpoint-widescreen .fb-order-2--widescreen,
+.breakpoint-desktop .fb-order-2--desktop,
+.breakpoint-tablet-wide .fb-order-2--tablet-wide,
+.breakpoint-tablet .fb-order-2--tablet,
+.breakpoint-phone .fb-order-2--phone {
+  order: 2;
+}
+
+.fb-order-3,
+.breakpoint-widescreen .fb-order-3--widescreen,
+.breakpoint-desktop .fb-order-3--desktop,
+.breakpoint-tablet-wide .fb-order-3--tablet-wide,
+.breakpoint-tablet .fb-order-3--tablet,
+.breakpoint-phone .fb-order-3--phone {
+  order: 3;
+}
+
+.fb-order-4,
+.breakpoint-widescreen .fb-order-4--widescreen,
+.breakpoint-desktop .fb-order-4--desktop,
+.breakpoint-tablet-wide .fb-order-4--tablet-wide,
+.breakpoint-tablet .fb-order-4--tablet,
+.breakpoint-phone .fb-order-4--phone {
+  order: 4;
+}
