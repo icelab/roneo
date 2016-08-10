@@ -21,14 +21,6 @@
 .table td {
   padding: var(--spacingXSmall) var(--spacingSmall);
 }
-  .table th:first-child,
-  .table td:first-child {
-    padding-left: 0;
-  }
-  .table th:last-child,
-  .table td:last-child {
-    padding-right: 0;
-  }
 
 .table th {
   border-bottom: 0.3rem solid var(--colorGreyLight);
@@ -36,12 +28,26 @@
 }
 
 .table td {
-  border-bottom: 0.1rem solid var(--colorGreyLight);
+  border-top: 0.1rem solid var(--colorGreyLight);
 }
+  .table tr:first-child td {
+    border-top: none;
+  }
 
-.table tr:last-child td {
-  border-bottom: none;
+/* Hovers for items bound with `rowLink` */
+.table tr[data-view-row-link]:hover {
+  cursor: pointer;
 }
+  .table tr[data-view-row-link]:hover td {
+    background-color: transparent;
+    transition-property: border-color, background-color, color;
+    transition-duration: 80ms;
+  }
+  .table tr[data-view-row-link]:hover td {
+    background-color: var(--colorBlueHint);
+    border-color: var(--colorBlueLight);
+    color: var(--colorBlueDark);
+  }
 
 .table th a,
 .table th button {

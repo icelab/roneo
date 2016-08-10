@@ -2,6 +2,7 @@ import confirmAction from '../confirm-action'
 import disableInputZoom from '../disable-input-zoom'
 import formalist from '../formalist'
 import fastClick from '../fast-click'
+import rowLink from '../row-link'
 import toggleClass from '../toggle-class'
 
 /**
@@ -24,5 +25,6 @@ export default {
   disableInputZoom,
   fastClick,
   formalist,
+  rowLink,
   toggleClass,
 }
