@@ -67,11 +67,13 @@
 /* Sizes */
 
 .button--xsmall {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  padding: 0.3em 1em 0.45em 0.8em;
 }
 
 .button--small {
   font-size: 1.3rem;
+  padding: 0.3em 1em 0.45em 0.8em;
 }
 
 .button--medium {

@@ -1,22 +1,22 @@
 @import '../traits';
 
 .link,
-.link-children a {
+.link-children a:not(.button) {
   color: var(--colorLink);
   text-decoration: underline;
 }
   .link:visited,
-  .link-children a:visited {
+  .link-children a:not(.button):visited {
     color: var(--colorLinkDark);
   }
   .link:focus,
   .link:hover,
-  .link-children a:focus,
-  .link-children a:hover {
+  .link-children a:not(.button):focus,
+  .link-children a:not(.button):hover {
     color: var(--colorLinkHover);
   }
 
 .link--no-decoration,
-.link-children--no-decoration a {
+.link-children--no-decoration a:not(.button) {
   text-decoration: none;
 }
