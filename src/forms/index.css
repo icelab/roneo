@@ -2,7 +2,7 @@
 
 .form-input {
   color: var(--colorGreyDark);
-  border-color: var(--colorGreyMid);
+  border-color: var(--colorGreyMidLight);
   background-color: var(--colorGreyHint);
   box-shadow: inset 0px 2px 0px 0px rgba(20,15,10,0.03);
   border-width: 0;
