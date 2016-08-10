@@ -6,7 +6,12 @@
 /**
  * General traits
  */
-@import './traits';
+ @import "./traits/borders.css";
+ @import "./traits/colors.css";
+ @import "./traits/fonts.css";
+ @import "./traits/layout.css";
+ @import "./traits/type.css";
+
 
 /**
  * Base
@@ -54,3 +59,9 @@ body {
 @import './panel';
 @import './tables';
 @import './tabs';
+
+/**
+ * Overriding traits
+ */
+@import "./traits/spacing.css";
+@import "./traits/misc.css";

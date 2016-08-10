@@ -1,5 +1,3 @@
-@import '../traits';
-
 .form-input {
   color: var(--colorGreyDark);
   border-color: var(--colorGreyMidLight);
@@ -26,6 +24,22 @@
       color: lightBlend;
     }
 
+.form-input--xsmall {
+  font-size: 1.2rem;
+}
+.form-input--small {
+  font-size: 1.3rem;
+}
+.form-input--medium {
+  font-size: 1.5rem;
+}
+.form-input--large {
+  font-size: 1.8rem;
+}
+.form-input--xlarge {
+  font-size: 2rem;
+}
+
 .form-input--error {
   color: var(--colorWarning);
   border-color: var(--colorWarning);
@@ -47,4 +61,10 @@
 .fonts-loaded .form-input,
 .fonts-loaded .form-label {
   font-family: var(--fontPrimary);
+}
+
+.form-label--inline,
+.form-input--inline {
+  display: inline-block;
+  width: auto;
 }

@@ -1,5 +1,3 @@
-@import "../traits";
-
 /* Define styles for blocks of content scoped within the .copy rather than
  * making them global. Global styles will be constantly overridden.
  *

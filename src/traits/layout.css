@@ -44,3 +44,12 @@
 .d-flex {
   display: flex;
 }
+
+/**
+ * Alignment
+ */
+
+.fba-center {
+  display: flex;
+  align-items: center;
+}

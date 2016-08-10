@@ -1,5 +1,3 @@
-@import '../traits';
-
 .link,
 .link-children a:not(.button) {
   color: var(--colorLink);

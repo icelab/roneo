@@ -133,3 +133,15 @@
 .w-0 {
   width: 0;
 }
+
+.minw-10r {
+  min-width: 10rem;
+}
+
+.minw-20r {
+  min-width: 20rem;
+}
+
+.minw-30r {
+  min-width: 30rem;
+}
