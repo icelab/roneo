@@ -1,4 +1,5 @@
 import confirmAction from '../confirm-action'
+import confirmClick from '../confirm-click'
 import disableInputZoom from '../disable-input-zoom'
 import formalist from '../formalist'
 import fastClick from '../fast-click'
@@ -22,6 +23,7 @@ import toggleClass from '../toggle-class'
 
 export default {
   confirmAction,
+  confirmClick,
   disableInputZoom,
   fastClick,
   formalist,
