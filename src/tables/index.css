@@ -4,9 +4,12 @@
   font-size: 1.4rem;
   margin-bottom: var(--spacingXSmall);
   max-width: 100%;
-  -webkit-overflow-scrolling: touch;
-  overflow-x: scroll;
 }
+  .breakpoint-tablet .table,
+  .breakpoint-phone .table {
+    -webkit-overflow-scrolling: touch;
+    overflow-x: scroll;
+  }
   .table table {
     width: 100%;
   }
