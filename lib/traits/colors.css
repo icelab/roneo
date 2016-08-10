@@ -9,9 +9,10 @@
   --colorRed:          #eb4d5c;
   --colorRedHint:      #fff4f5;
   --colorGreen:        #2ca476;
-  --colorGreyHint:   #f6f6f6;
+  --colorGreyHint:     #f6f6f6;
   --colorGreyLight:    #eaeaea;
-  --colorGreyMid:      #ccc;
+  --colorGreyMidLight: #ccc;
+  --colorGreyMid:      #999;
   --colorGrey:         #747474;
   --colorGreyDark:     #4a4a4a;
   --colorPrimary:      var(--colorBlue);
@@ -118,6 +119,20 @@
 
 .bc-grey-light {
   border-color: var(--colorGreyLight);
+}
+
+/* Grey mid */
+
+.c-grey-midlight {
+  color: var(--colorGreyMidLight);
+}
+
+.bgc-grey-midlight {
+  background-color: var(--colorGreyMidLight);
+}
+
+.bc-grey-midlight {
+  border-color: var(--colorGreyMidLight);
 }
 
 /* Grey mid */
