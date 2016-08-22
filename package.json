@@ -43,7 +43,7 @@
     "fastclick": "1.0.6",
     "fontfaceobserver": "1.7.1",
     "formalist-serialize-react": "icelab/formalist-serialize-react",
-    "formalist-standard-react": "icelab/formalist-standard-react",
+    "formalist-standard-react": "icelab/formalist-standard-react#rte",
     "immutable": "3.7.6",
     "lodash.debounce": "4.0.7",
     "metaquery": "1.2.5",
