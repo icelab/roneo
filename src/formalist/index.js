@@ -111,7 +111,7 @@ class FormWrapper extends Component {
 
 FormWrapper.propTypes = {
   form: PropTypes.object.isRequired,
-  parentForm: PropTypes.node,
+  parentForm: PropTypes.object,
   prefix: PropTypes.string,
 }
 
