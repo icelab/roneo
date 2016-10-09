@@ -58,7 +58,7 @@ class FormWrapper extends Component {
               serialized,
             })
           })
-        }, 250
+        }, 30
       )
     )
   }
