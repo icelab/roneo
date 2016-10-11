@@ -3,11 +3,8 @@ import React, {
   PropTypes,
 } from 'react'
 import ReactDOM from 'react-dom'
-import Immutable from 'immutable'
 import template from 'formalist-standard-react'
 import serialize from 'formalist-serialize-react'
-import debounce from 'lodash.debounce'
-import 'ric'
 
 /**
  * Recurse to find the first FORM that is a parent of `el`
@@ -30,50 +27,15 @@ function findParentForm (el) {
  * Simple wrapper to create the form outer
  */
 class FormWrapper extends Component {
-
-  constructor (props) {
-    super(props)
-    const {form} = this.props
-    const formState = form.store.getState()
-    const serialized = this.serializeForm(formState)
-    this.state = {
-      formState,
-      serialized,
-    }
-  }
-
-  componentWillMount () {
-    const {form} = this.props
-    form.store.subscribe(
-      // Debounce the reducer
-      debounce(
-        () => {
-          // Wait for an idle callback to trigger the serialized render
-          // as it’s less important and more expensive
-          window.requestUserIdle(() => {
-            const formState = form.store.getState()
-            const serialized = this.serializeForm(formState)
-            this.setState({
-              formState,
-              serialized,
-            })
-          })
-        }, 30
-      )
-    )
-  }
-
   componentDidMount () {
     const self = this
-    const {parentForm, form} = this.props
+    const {parentForm} = this.props
     if (parentForm) {
       // Ensure the serialize data get written before we submit
       parentForm.addEventListener('submit', function onParentSubmit (e) {
         e.preventDefault()
-        const formState = form.store.getState()
-        const serialized = self.serializeForm(formState)
+        const serialized = self.serializeForm()
         self.setState({
-          formState,
           serialized,
         }, () => {
           // After state is set, remove our listener and submit the form again
@@ -84,22 +46,18 @@ class FormWrapper extends Component {
     }
   }
 
-  serializeForm (formState) {
+  serializeForm () {
     const {prefix} = this.props
-    formState = formState || this.props.form.store.getState()
+    const formState = this.props.form.store.getState()
     return serialize(
       formState.toJS(),
       {prefix}
     )
   }
 
-  shouldComponentUpdate (nextProps, nextState) {
-    return !Immutable.is(this.state.formState, nextState.formState)
-  }
-
   render () {
     const {form} = this.props
-    const {serialized} = this.state
+    const serialized = (this.state && this.state.serialized) ? this.state.serialized : null
     return (
       <div>
         {form.render()}
