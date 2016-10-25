@@ -27,6 +27,26 @@ function findParentForm (el) {
  * Simple wrapper to create the form outer
  */
 class FormWrapper extends Component {
+  constructor (props) {
+    super(props)
+    const {form} = this.props
+    const formState = form.store.getState()
+    this.state = {
+      formState,
+      serialized: null,
+    }
+  }
+
+  componentWillMount () {
+    const {form} = this.props
+    form.store.subscribe(() => {
+      const formState = form.store.getState()
+      this.setState({
+        formState,
+      })
+    })
+  }
+
   componentDidMount () {
     const self = this
     const {parentForm} = this.props
@@ -57,7 +77,7 @@ class FormWrapper extends Component {
 
   render () {
     const {form} = this.props
-    const serialized = (this.state && this.state.serialized) ? this.state.serialized : null
+    const {serialized} = this.state
     return (
       <div>
         {form.render()}
