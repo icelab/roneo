@@ -19,3 +19,44 @@
   border-right-width: 1px;
   border-right-style: solid;
 }
+
+.b-top-2 {
+  border-top-width: 2px;
+  border-top-style: solid;
+}
+
+.b-bottom-2 {
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+}
+
+.b-left-2 {
+  border-left-width: 2px;
+  border-left-style: solid;
+}
+
+.b-right-2 {
+  border-right-width: 2px;
+  border-right-style: solid;
+}
+
+
+.b-top-3 {
+  border-top-width: 3px;
+  border-top-style: solid;
+}
+
+.b-bottom-3 {
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+}
+
+.b-left-3 {
+  border-left-width: 3px;
+  border-left-style: solid;
+}
+
+.b-right-3 {
+  border-right-width: 3px;
+  border-right-style: solid;
+}
