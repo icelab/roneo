@@ -3,7 +3,7 @@ import domready from 'domready'
 import viewloader from 'viewloader'
 
 // Components
-import views from './views'
+import {default as defaultViews} from './views'
 
 function removeNavOpenClasses () {
   // Remove any `.nav-aware` classes when widescreen
@@ -15,7 +15,9 @@ function removeNavOpenClasses () {
   })
 }
 
-export default function roneo () {
+export default function roneo (views) {
+  // Allow passing of specific views
+  views = views || defaultViews
   domready(function onDomready () {
     viewloader.execute(views)
   })
@@ -45,3 +47,6 @@ export default function roneo () {
     })
   }
 }
+
+// Additional exports
+export {defaultViews as views}
