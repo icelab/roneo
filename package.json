@@ -46,7 +46,7 @@
     "fastclick": "1.0.6",
     "fontfaceobserver": "2.0.5",
     "formalist-serialize-react": "icelab/formalist-serialize-react",
-    "formalist-standard-react": "icelab/formalist-standard-react",
+    "formalist-standard-react": "icelab/formalist-standard-react#tags-field",
     "immutable": "3.7.6",
     "nodemon": "^1.9.2",
     "metaquery": "1.2.5",
