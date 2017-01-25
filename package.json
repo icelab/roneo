@@ -1,6 +1,6 @@
 {
   "name": "roneo",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "homepage": "https://github.com/icelab/roneo",
   "main": "lib/index.js",
