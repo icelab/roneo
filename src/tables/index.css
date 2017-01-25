@@ -5,6 +5,7 @@
   margin-bottom: var(--spacingXSmall);
   max-width: 100%;
 }
+  .table--overflow,
   .breakpoint-tablet .table,
   .breakpoint-phone .table {
     -webkit-overflow-scrolling: touch;

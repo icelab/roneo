@@ -25,6 +25,7 @@
 
 .panel__primary {
   flex: 5;
+  max-width: 100%;
 }
 
 .panel__secondary {
