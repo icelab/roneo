@@ -1,6 +1,6 @@
 {
   "name": "roneo",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "homepage": "https://github.com/icelab/roneo",
   "main": "lib/index.js",
@@ -45,8 +45,8 @@
     "es6-shim": "0.35.0",
     "fastclick": "1.0.6",
     "fontfaceobserver": "2.0.5",
-    "formalist-serialize-react": "^0.0.1",
-    "formalist-standard-react": "^0.0.1",
+    "formalist-serialize-react": "^0.0.2",
+    "formalist-standard-react": "^0.0.4",
     "immutable": "3.7.6",
     "nodemon": "^1.9.2",
     "metaquery": "1.2.5",
