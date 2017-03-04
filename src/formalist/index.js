@@ -49,11 +49,19 @@ class FormWrapper extends Component {
 
   componentDidMount () {
     const self = this
-    const {parentForm} = this.props
+    let formBusy = false
+    const {form, parentForm} = this.props
+    form.on('change', () => {
+      const formState = form.getState()
+      this.setState({
+        formState,
+      })
+    })
     if (parentForm) {
       // Ensure the serialize data get written before we submit
       parentForm.addEventListener('submit', function onParentSubmit (e) {
         e.preventDefault()
+        if (formBusy) return
         const serialized = self.serializeForm()
         self.setState({
           serialized,
@@ -62,6 +70,15 @@ class FormWrapper extends Component {
           parentForm.removeEventListener('submit', onParentSubmit)
           parentForm.submit()
         })
+      })
+      // Enable/disable the form
+      form.on('busy', () => {
+        formBusy = true
+        parentForm.classList.add('form--busy')
+      })
+      form.on('idle', () => {
+        formBusy = false
+        parentForm.classList.remove('form--busy')
       })
     }
   }
