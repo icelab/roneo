@@ -4,7 +4,7 @@
  * https://www.filamentgroup.com/lab/font-events.html
  */
 
-import 'fontfaceobserver'
+import FontFaceObserver from 'fontfaceobserver'
 
 export default function fontsLoaded (fontsToCheck) {
   var timeout = 1500
@@ -12,7 +12,7 @@ export default function fontsLoaded (fontsToCheck) {
 
   if (!fontsLoaded) {
     var loading = fontsToCheck.map((font) => {
-      const observer = new window.FontFaceObserver(font.family, {
+      const observer = new FontFaceObserver(font.family, {
         weight: font.weight,
         style: font.style,
       })
