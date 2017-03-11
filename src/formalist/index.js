@@ -30,29 +30,19 @@ class FormWrapper extends Component {
   constructor (props) {
     super(props)
     const {form} = this.props
-    const formState = form.store.getState()
+    const formState = form.getState()
     this.state = {
       formState,
       serialized: null,
     }
   }
 
-  componentWillMount () {
-    const {form} = this.props
-    form.store.subscribe(() => {
-      const formState = form.store.getState()
-      this.setState({
-        formState,
-      })
-    })
-  }
-
   componentDidMount () {
     const self = this
     let formBusy = false
     const {form, parentForm} = this.props
-    form.on('change', () => {
-      const formState = form.getState()
+    form.on('change', (getState) => {
+      const formState = getState()
       this.setState({
         formState,
       })
@@ -85,7 +75,7 @@ class FormWrapper extends Component {
 
   serializeForm () {
     const {prefix} = this.props
-    const formState = this.props.form.store.getState()
+    const formState = this.props.form.getState()
     return serialize(
       formState.toJS(),
       {prefix}
