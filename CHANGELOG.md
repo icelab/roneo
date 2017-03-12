@@ -3,15 +3,15 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-# v1.0.2 2017-03-06
+# v1.1.0 2017-03-12
 
-## Fixed
+* Add `form--busy` classes to `parentForm` for formalist forms when they’re busy.
+
+# v1.0.2 2017-03-06
 
 * Fix broken reference to `FontFaceObserver` import.
 
 # v1.0.1 2017-02-24
-
-## Fixed
 
 * Drop draft-js dependency back to ^0.9.1. We’re waiting on compatibilty changes
   for the entity API in the importer/exporter to be released.
