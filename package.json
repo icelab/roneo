@@ -45,8 +45,8 @@
     "es6-shim": "^0.35.0",
     "fastclick": "^1.0.6",
     "fontfaceobserver": "^2.0.5",
-    "formalist-serialize-react": "^1.0.0",
-    "formalist-standard-react": "icelab/formalist-standard-react#horizontal-rule",
+    "formalist-serialize-react": "^1.0.3",
+    "formalist-standard-react": "^3.0.0",
     "immutable": "^3.7.6",
     "nodemon": "^1.9.2",
     "metaquery": "^1.2.5",
@@ -54,7 +54,7 @@
     "viewloader": "^1.1.1"
   },
   "peerDependencies": {
-    "react": ">=15.0.0",
-    "react-dom": ">=15.0.0"
+    "react": ">=15.6.1",
+    "react-dom": ">=15.6.1"
   }
 }
