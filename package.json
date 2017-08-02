@@ -1,6 +1,6 @@
 {
   "name": "roneo",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A reusable admin shell.",
   "homepage": "https://github.com/icelab/roneo",
   "main": "lib/index.js",
@@ -46,7 +46,7 @@
     "fastclick": "^1.0.6",
     "fontfaceobserver": "^2.0.5",
     "formalist-serialize-react": "^1.0.3",
-    "formalist-standard-react": "^3.0.0",
+    "formalist-standard-react": "^3.0.1",
     "immutable": "^3.7.6",
     "nodemon": "^1.9.2",
     "metaquery": "^1.2.5",
