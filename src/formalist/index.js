@@ -1,8 +1,8 @@
 import React, {
   Component,
-  PropTypes,
 } from 'react'
 import ReactDOM from 'react-dom'
+import PropTypes from 'prop-types'
 import template from 'formalist-standard-react'
 import serialize from 'formalist-serialize-react'
 

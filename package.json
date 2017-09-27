@@ -48,8 +48,9 @@
     "formalist-serialize-react": "^1.0.3",
     "formalist-standard-react": "^3.0.1",
     "immutable": "^3.7.6",
-    "nodemon": "^1.9.2",
     "metaquery": "^1.2.5",
+    "nodemon": "^1.9.2",
+    "prop-types": "^15.6.0",
     "turbolinks": "^5.0.0-beta4",
     "viewloader": "^1.1.1"
   },
