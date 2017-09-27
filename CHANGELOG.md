@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+# v2.0.2 2017-09-28
+
+* Use standalone prop-types package (has been removed from React)
+
 # v2.0.1 2017-08-02
 
 * Update formalist-standard-react version.
