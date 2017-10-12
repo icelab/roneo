@@ -1,67 +1,43 @@
 /**
- * Reset
- */
-@import './reset';
+* Reset
+*/
+@import "./reset";
 
 /**
- * General traits
- */
- @import "./traits/borders.css";
- @import "./traits/colors.css";
- @import "./traits/fonts.css";
- @import "./traits/layout.css";
- @import "./traits/type.css";
-
-
-/**
- * Base
- */
-
-html {
-  font-size: 62.5%;
-}
-  html.breakpoint-tablet {
-    font-size: 56.25%;
-  }
-  html.breakpoint-phone {
-    font-size: 50%;
-  }
-
-body {
-  background-color: var(--colorGreyHint);
-  color: var(--colorGreyDark);
-  font-family: var(--fontPrimaryFallback);
-  font-size: 1.5rem;
-  line-height: 1.4;
-  overflow-x: hidden;
-}
-  .fonts-loaded body {
-    font-family: var(--fontPrimary);
-  }
-  .breakpoint-widescreen body {
-    display: flex;
-  }
+* General traits
+*/
+@import "./traits/borders.css";
+@import "./traits/colors.css";
+@import "./traits/fonts.css";
+@import "./traits/layout.css";
+@import "./traits/type.css";
 
 /**
- * Components
- */
+* Base
+*/
 
-@import './buttons';
-@import './copy';
-@import './flash';
-@import './forms';
-@import './header';
-@import './links';
-@import './labels';
-@import './minimal';
-@import './nav';
-@import './page';
-@import './panel';
-@import './tables';
-@import './tabs';
+@import "./base";
 
 /**
- * Overriding traits
- */
+* Components
+*/
+
+@import "./buttons";
+@import "./copy";
+@import "./flash";
+@import "./forms";
+@import "./header";
+@import "./links";
+@import "./labels";
+@import "./minimal";
+@import "./nav";
+@import "./page";
+@import "./panel";
+@import "./tables";
+@import "./tabs";
+
+/**
+* Overriding traits
+*/
 @import "./traits/spacing.css";
 @import "./traits/misc.css";
