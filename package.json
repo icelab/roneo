@@ -46,7 +46,7 @@
     "fastclick": "^1.0.6",
     "fontfaceobserver": "^2.0.5",
     "formalist-serialize-react": "^1.0.3",
-    "formalist-standard-react": "^3.0.1",
+    "formalist-standard-react": "icelab/formalist-standard-react#emotion",
     "immutable": "^3.7.6",
     "metaquery": "^1.2.5",
     "nodemon": "^1.9.2",
