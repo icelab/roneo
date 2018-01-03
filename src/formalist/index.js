@@ -56,9 +56,18 @@ class FormWrapper extends Component {
         self.setState({
           serialized,
         }, () => {
-          // After state is set, remove our listener and submit the form again
-          parentForm.removeEventListener('submit', onParentSubmit)
-          parentForm.submit()
+          // Create and dispatch a custom event that is cancelable
+          const postSerializationEvent = new window.CustomEvent('postserialization', {
+            detail: {
+              serialized,
+              originalEvent: e,
+            },
+            cancelable: true,
+          })
+          const succeeded = parentForm.dispatchEvent(postSerializationEvent)
+          if (succeeded) {
+            parentForm.submit()
+          }
         })
       })
       // Enable/disable the form
