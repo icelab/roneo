@@ -18,12 +18,15 @@ function removeNavOpenClasses () {
 export default function roneo (views) {
   // Allow passing of specific views
   views = views || defaultViews
+
+  let viewloaderManager = viewloader(views)
+
   domready(function onDomready () {
-    viewloader.execute(views)
+    viewloaderManager.callViews()
   })
   // DOMContentLoaded equivalent with Turbolinks
   document.addEventListener('turbolinks:render', function onTurboLinksLoad () {
-    viewloader.execute(views)
+    viewloaderManager.callViews()
     let pageEl = document.querySelector('.page')
     pageEl.classList.remove('page--inactive')
   })
