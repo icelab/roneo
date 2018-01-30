@@ -52,7 +52,7 @@
     "nodemon": "^1.9.2",
     "prop-types": "^15.6.0",
     "turbolinks": "^5.0.0-beta4",
-    "viewloader": "^1.1.1"
+    "viewloader": "icelab/viewloader#extended-api"
   },
   "peerDependencies": {
     "react": ">=16.0.0",
