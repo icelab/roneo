@@ -1,6 +1,6 @@
 {
   "name": "roneo",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "A reusable admin shell.",
   "homepage": "https://github.com/icelab/roneo",
   "main": "lib/index.js",
@@ -52,7 +52,7 @@
     "nodemon": "^1.9.2",
     "prop-types": "^15.6.0",
     "turbolinks": "^5.0.0-beta4",
-    "viewloader": "icelab/viewloader#extended-api"
+    "viewloader": "^2.0.0"
   },
   "peerDependencies": {
     "react": ">=16.0.0",
