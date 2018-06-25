@@ -3,6 +3,11 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+# v3.0.3 2018-06-25
+
+* Update formalist-standard-react version, require react >16.x and draft-js 0.10.5
+* Update to use viewloader 2.x
+
 # v2.0.3 2017-10-12
 
 * Make @import compatible with with postcss-import library (all at top)
