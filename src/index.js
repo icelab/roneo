@@ -31,6 +31,11 @@ export default function roneo (views) {
     pageEl.classList.remove('page--inactive')
   })
 
+  // Destroy views when navigating
+  document.addEventListener('turbolinks:before-render', () => {
+    viewloaderManager.destroyViews()
+  })
+
   // Hide nav when navigating
   document.addEventListener('turbolinks:request-start', () => {
     setTimeout(removeNavOpenClasses, 50)
