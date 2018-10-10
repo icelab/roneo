@@ -112,13 +112,13 @@ FormWrapper.propTypes = {
 const defaultOptions = {
   serializeBeforeParentSubmit: true,
 }
-
 /**
- * Viewloader compatible boot function
+ * Render formalist form
  * @param  {Element} el Element where the form will be mounted
- * @param  {AST} ast Formalist compatible abstract syntax tree
+ * @param  {AST} props.ast Formalist compatible abstract syntax tree
+ * @param  {AST} props.prefix Formalist compatible abstract syntax tree
  */
-export default function formalist (el, props) {
+export function renderFormalist (el, props) {
   const options = Object.assign({}, defaultOptions, props)
   const configuredTemplate = template(null, options.config)
   const form = configuredTemplate(options.ast)
@@ -137,4 +137,13 @@ export default function formalist (el, props) {
     <FormWrapper {...wrapperProps} />,
     el
   )
+
+  return form
+}
+
+/**
+ * Viewloader compatible boot function
+ */
+export default function formalist (el, props) {
+  renderFormalist(el, props)
 }
