@@ -3,6 +3,11 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+# v3.0.4 2018-10-11
+
+* Update formalist-standard-react to version that include named-path support
+* Expose `renderFormalist` method for easier modification in wrapping apps
+
 # v3.0.3 2018-06-25
 
 * Update formalist-standard-react version, require react >16.x and draft-js 0.10.5
