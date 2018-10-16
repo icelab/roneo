@@ -3,6 +3,11 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+# v3.0.5 2018-10-16
+
+* Expose `initializeFormalist` in place of `renderFormalist` so that events can
+  be bound to the form instance before it’s rendered to the DOM
+
 # v3.0.4 2018-10-11
 
 * Update formalist-standard-react to version that include named-path support
