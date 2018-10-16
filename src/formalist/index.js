@@ -118,7 +118,7 @@ const defaultOptions = {
  * @param  {AST} props.ast Formalist compatible abstract syntax tree
  * @param  {AST} props.prefix Formalist compatible abstract syntax tree
  */
-export function renderFormalist (el, props) {
+export function initializeFormalist (el, props) {
   const options = Object.assign({}, defaultOptions, props)
   const configuredTemplate = template(null, options.config)
   const form = configuredTemplate(options.ast)
@@ -133,17 +133,25 @@ export function renderFormalist (el, props) {
       wrapperProps.parentForm = parentForm
     }
   }
-  ReactDOM.render(
-    <FormWrapper {...wrapperProps} />,
-    el
-  )
 
-  return form
+  // Create a function to call the actual DOM render
+  function render () {
+    ReactDOM.render(
+      <FormWrapper {...wrapperProps} />,
+      el
+    )
+  }
+
+  return {
+    form,
+    render,
+  }
 }
 
 /**
  * Viewloader compatible boot function
  */
 export default function formalist (el, props) {
-  renderFormalist(el, props)
+  const form = initializeFormalist(el, props)
+  form.render()
 }
