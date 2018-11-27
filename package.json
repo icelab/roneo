@@ -1,6 +1,6 @@
 {
   "name": "roneo",
-  "version": "3.0.5",
+  "version": "3.0.6",
   "description": "A reusable admin shell.",
   "homepage": "https://github.com/icelab/roneo",
   "main": "lib/index.js",
