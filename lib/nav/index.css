@@ -16,7 +16,7 @@
   -webkit-overflow-scrolling: touch;
   position: fixed;
   top: 0;
-  transform: translate3d(-var(--navWidth), 0, 0);
+  transform: translate3d(calc(var(--navWidth) * -1), 0, 0);
   transition-property: transform;
   transition-duration: var(--navOpenDuration);
   transition-timing-function: var(--navOpenTiming);
