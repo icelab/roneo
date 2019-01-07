@@ -35,6 +35,9 @@
     transition-duration: var(--navOpenDuration);
     width: 2rem;
   }
+  .breakpoint-widescreen .nav:after {
+    display: none;
+  }
   .breakpoint-widescreen .nav {
     padding-top: var(--headerHeightDesktop);
   }
