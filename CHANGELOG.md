@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+# v3.0.8 2019-01-08
+
+* Fix CSS bug
+
 # v3.0.7 2018-12-06
 
 * Fix `navWidth` calculation
