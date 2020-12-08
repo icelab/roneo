@@ -48,7 +48,7 @@
     "fastclick": "^1.0.6",
     "fontfaceobserver": "^2.0.13",
     "formalist-serialize-react": "^1.0.6",
-    "formalist-standard-react": "^4.1.4",
+    "formalist-standard-react": "team-formalist/formalist-standard-react#ac/support-many-forms",
     "immutable": "^3.8.2",
     "metaquery": "^1.2.5",
     "nodemon": "^1.18.6",
