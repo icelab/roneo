@@ -6,6 +6,7 @@
 export default function confirmAction (el, props) {
   const question = props.question
   const action = props.action
+  const csrfTokenName = props.csrf_token_name || '_csrf'
 
   function onClick (e) {
     // Don't do anything if we can’t work out the action
@@ -27,11 +28,11 @@ export default function confirmAction (el, props) {
 
       // Append the CRSF token if it exists
       if (props.method !== 'GET') {
-        let csrfElement = document.querySelector('meta[name=_csrf]')
+        let csrfElement = document.querySelector('meta[name=' + csrfTokenName + ']')
         if (csrfElement) {
           let input = document.createElement('input')
           input.setAttribute('type', 'hidden')
-          input.setAttribute('name', '_csrf')
+          input.setAttribute('name', csrfTokenName)
           input.setAttribute('value', csrfElement.getAttribute('content'))
           form.appendChild(input)
         }
