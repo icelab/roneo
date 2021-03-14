@@ -2035,7 +2035,7 @@ formalist-serialize-react@^1.0.6:
 
 formalist-standard-react@team-formalist/formalist-standard-react#ac/support-many-forms:
   version "4.1.8"
-  resolved "https://codeload.github.com/team-formalist/formalist-standard-react/tar.gz/eda970369d4c729da9d21984800501d25f662d7b"
+  resolved "https://codeload.github.com/team-formalist/formalist-standard-react/tar.gz/b79211dbd2404cb4a915921eac6de1b96509da03"
   dependencies:
     uid "^0.0.2"
     attache-upload "^2.1.1"
