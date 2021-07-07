@@ -21,7 +21,7 @@ roneo()
 
 There are also two separate components for bootstrapping the page. These are intended to be inlined in the `<head>` and just inside the `</body>` respectively.
 
-`inline-header` sets up metaQuery and asynchronously loads some custom fonts for the admin from Google Fonts. It also checks a `localStorage` value to see if the fonts _should_ already be cached, for example on subsequent page loads, and adds a `.fonts-loaded` class to the document:
+`inline-header` asynchronously loads some custom fonts for the admin from Google Fonts. It also checks a `localStorage` value to see if the fonts _should_ already be cached, for example on subsequent page loads, and adds a `.fonts-loaded` class to the document:
 
 ```js
 import inlineHeader from 'roneo/lib/inline-header'
