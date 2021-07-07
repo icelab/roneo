@@ -10,13 +10,17 @@
   margin-top: var(--spacingXLarge);
   padding: var(--spacingXLarge);
 }
-  .breakpoint-tablet .panel,
-  .breakpoint-phone .panel {
-    flex-direction: column;
+  @media (min-width: 640px) and (max-width: 767px) {
+    .panel {
+      flex-direction: column;
+    }
   }
-  .breakpoint-phone .panel {
-    margin-top: var(--spacingMedium);
-    padding: var(--spacingLarge);
+  @media (max-width: 639px) {
+    .panel {
+      flex-direction: column;
+      margin-top: var(--spacingMedium);
+      padding: var(--spacingLarge);
+    }
   }
 
 .tabs + .panel {
@@ -32,16 +36,18 @@
   margin-left: var(--spacingXLarge);
   flex: 2;
 }
-  .breakpoint-tablet .panel__secondary,
-  .breakpoint-phone .panel__secondary {
-    margin-top: var(--spacingXLarge);
-    margin-left: 0;
-    width: 100%;
+  @media (max-width: 767px) {
+    .panel__secondary {
+      margin-top: var(--spacingXLarge);
+      margin-left: 0;
+      width: 100%;
+    }
   }
-  .breakpoint-tablet .panel__secondary[class*="fb-order-1"],
-  .breakpoint-phone .panel__secondary[class*="fb-order-1"] {
-    margin-bottom: var(--spacingXLarge);
-    margin-top: auto;
+  @media (max-width: 767px) {
+    .panel__secondary[class*="fb-order-1"] {
+      margin-bottom: var(--spacingXLarge);
+      margin-top: auto;
+    }
   }
 
 .panel__left {
@@ -59,8 +65,9 @@
     margin-left: var(--spacingXLarge);
     margin-right: var(--spacingXLarge);
   }
-  .breakpoint-tablet .panel__thirds,
-  .breakpoint-phone .panel__thirds {
-    margin-left: 0;
-    margin-right: 0;
+  @media (max-width: 767px) {
+    .panel__thirds {
+      margin-left: 0;
+      margin-right: 0;
+    }
   }

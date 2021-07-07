@@ -42,12 +42,14 @@
       text-decoration: underline;
     }
 
-    .breakpoint-phone .header {
-      background-color: var(--colorGreyHint);
-      height: var(--headerHeightPhone);
-      padding-left: var(--spacingMedium);
-      padding-right: var(--spacingMedium);
-      position: fixed;
+    @media (max-width: 639px) {
+      .header {
+        background-color: var(--colorGreyHint);
+        height: var(--headerHeightPhone);
+        padding-left: var(--spacingMedium);
+        padding-right: var(--spacingMedium);
+        position: fixed;
+      }
     }
 
 .header-nav {
