@@ -47,8 +47,10 @@ export default function roneo (views) {
    * Make adjustments based on breakpoints
    */
   const widescreenBreakpoint = window.matchMedia("(min-width: 1400px)")
-  widescreenBreakpoint.addEventListener("change", () => {
-    removeNavOpenClasses()
+  widescreenBreakpoint.addEventListener("change", (e) => {
+    if (e.matches) {
+      removeNavOpenClasses()
+    }
   })
 }
 
