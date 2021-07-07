@@ -4,8 +4,10 @@ let allowDisable = false
  * Enable/disable the zoom disabling function. Meta, I know.
  */
 const phoneBreakpoint = window.matchMedia("(max-width: 639px)")
-phoneBreakpoint.addEventListener("change", () => {
-  allowDisable = matches
+phoneBreakpoint.addEventListener("change", (e) => {
+  if (e.matches) {
+    allowDisable = matches
+  }
 })
 
 
