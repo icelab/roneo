@@ -5,11 +5,15 @@
   margin-bottom: var(--spacingXSmall);
   max-width: 100%;
 }
-  .table--overflow,
-  .breakpoint-tablet .table,
-  .breakpoint-phone .table {
+  .table--overflow {
     -webkit-overflow-scrolling: touch;
     overflow-x: scroll;
+  }
+  @media (max-width: 767px) {
+    .table {
+      -webkit-overflow-scrolling: touch;
+      overflow-x: scroll;
+    }
   }
   .table table {
     width: 100%;

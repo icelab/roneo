@@ -54,38 +54,118 @@
   align-items: center;
 }
 
-.fb-order-1,
-.breakpoint-widescreen .fb-order-1--widescreen,
-.breakpoint-desktop .fb-order-1--desktop,
-.breakpoint-tablet-wide .fb-order-1--tablet-wide,
-.breakpoint-tablet .fb-order-1--tablet,
-.breakpoint-phone .fb-order-1--phone {
+.fb-order-1 {
   order: 1;
 }
+@media (min-width: 1400px) {
+  .fb-order-1--widescreen {
+    order: 1;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1399px) {
+  .fb-order-1--desktop {
+    order: 1;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .fb-order-1--tablet-wide {
+    order: 1;
+  }
+}
+@media (min-width: 640px) and (max-width: 767px) {
+  .fb-order-1--tablet {
+    order: 1;
+  }
+}
+@media (max-width: 639px) {
+  .fb-order-1--phone {
+    order: 1;
+  }
+}
 
-.fb-order-2,
-.breakpoint-widescreen .fb-order-2--widescreen,
-.breakpoint-desktop .fb-order-2--desktop,
-.breakpoint-tablet-wide .fb-order-2--tablet-wide,
-.breakpoint-tablet .fb-order-2--tablet,
-.breakpoint-phone .fb-order-2--phone {
+.fb-order-2 {
   order: 2;
 }
-
-.fb-order-3,
-.breakpoint-widescreen .fb-order-3--widescreen,
-.breakpoint-desktop .fb-order-3--desktop,
-.breakpoint-tablet-wide .fb-order-3--tablet-wide,
-.breakpoint-tablet .fb-order-3--tablet,
-.breakpoint-phone .fb-order-3--phone {
-  order: 3;
+@media (min-width: 1400px) {
+  .fb-order-2--widescreen {
+    order: 2;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1399px) {
+  .fb-order-2--desktop {
+    order: 2;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .fb-order-2--tablet-wide {
+    order: 2;
+  }
+}
+@media (min-width: 640px) and (max-width: 767px) {
+  .fb-order-2--tablet {
+    order: 2;
+  }
+}
+@media (max-width: 639px) {
+  .fb-order-2--phone {
+    order: 2;
+  }
 }
 
-.fb-order-4,
-.breakpoint-widescreen .fb-order-4--widescreen,
-.breakpoint-desktop .fb-order-4--desktop,
-.breakpoint-tablet-wide .fb-order-4--tablet-wide,
-.breakpoint-tablet .fb-order-4--tablet,
-.breakpoint-phone .fb-order-4--phone {
+.fb-order-3 {
+  order: 3;
+}
+@media (min-width: 1400px) {
+  .fb-order-3--widescreen {
+    order: 3;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1399px) {
+  .fb-order-3--desktop {
+    order: 3;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .fb-order-3--tablet-wide {
+    order: 3;
+  }
+}
+@media (min-width: 640px) and (max-width: 767px) {
+  .fb-order-3--tablet {
+    order: 3;
+  }
+}
+@media (max-width: 639px) {
+  .fb-order-3--phone {
+    order: 3;
+  }
+}
+
+.fb-order-4 {
   order: 4;
+}
+@media (min-width: 1400px) {
+  .fb-order-4--widescreen {
+    order: 4;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1399px) {
+  .fb-order-4--desktop {
+    order: 4;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .fb-order-4--tablet-wide {
+    order: 4;
+  }
+}
+@media (min-width: 640px) and (max-width: 767px) {
+  .fb-order-4--tablet {
+    order: 4;
+  }
+}
+@media (max-width: 639px) {
+  .fb-order-4--phone {
+    order: 4;
+  }
 }

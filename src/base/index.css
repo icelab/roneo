@@ -5,11 +5,15 @@
 html {
   font-size: 62.5%;
 }
-html.breakpoint-tablet {
-  font-size: 56.25%;
+@media (min-width: 640px) and (max-width: 767px) {
+  html {
+    font-size: 56.25%;
+  }
 }
-html.breakpoint-phone {
-  font-size: 50%;
+@media (max-width: 639px) {
+  html {
+    font-size: 50%;
+  }
 }
 
 body {
@@ -23,6 +27,8 @@ body {
 .fonts-loaded body {
   font-family: var(--fontPrimary);
 }
-.breakpoint-widescreen body {
-  display: flex;
+@media (min-width: 1400px) {
+  body {
+    display: flex;
+  }
 }
