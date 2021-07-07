@@ -6,7 +6,7 @@ let allowDisable = false
 const phoneBreakpoint = window.matchMedia("(max-width: 639px)")
 phoneBreakpoint.addEventListener("change", (e) => {
   if (e.matches) {
-    allowDisable = matches
+    allowDisable = true
   }
 })
 
