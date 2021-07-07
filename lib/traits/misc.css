@@ -36,37 +36,111 @@
 
 /* Visibility */
 
-.hide-all,
-.breakpoint-widescreen .hide-widescreen,
-.breakpoint-desktop .hide-desktop,
-.breakpoint-tablet-wide .hide-tablet-wide,
-.breakpoint-tablet .hide-tablet,
-.breakpoint-phone .hide-phone {
+.hide-all {
   display: none;
 }
-
-.breakpoint-widescreen .show-widescreen,
-.breakpoint-desktop .show-desktop,
-.breakpoint-tablet-wide .show-tablet-wide,
-.breakpoint-tablet .show-tablet,
-.breakpoint-phone .show-phone {
-  display: block;
+@media (min-width: 1400px) {
+  .hide-widescreen {
+    display: none;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1399px) {
+  .hide-desktop {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .hide-tablet-wide {
+    display: none;
+  }
+}
+@media (min-width: 640px) and (max-width: 767px) {
+  .hide-tablet {
+    display: none;
+  }
+}
+@media (max-width: 639px) {
+  .hide-phone {
+    display: none;
+  }
 }
 
-.breakpoint-widescreen .show-widescreen--i,
-.breakpoint-desktop .show-desktop--i,
-.breakpoint-tablet-wide .show-tablet-wide--i,
-.breakpoint-tablet .show-tablet--i,
-.breakpoint-phone .show-phone--i {
-  display: inline;
+@media (min-width: 1400px) {
+  .show-widescreen {
+    display: block;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1399px) {
+  .show-desktop {
+    display: block;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .show-tablet-wide {
+    display: block;
+  }
+}
+@media (min-width: 640px) and (max-width: 767px) {
+  .show-tablet {
+    display: block;
+  }
+}
+@media (max-width: 639px) {
+  .show-phone {
+    display: block;
+  }
 }
 
-.breakpoint-widescreen .show-widescreen--ib,
-.breakpoint-desktop .show-desktop--ib,
-.breakpoint-tablet-wide .show-tablet-wide--ib,
-.breakpoint-tablet .show-tablet--ib,
-.breakpoint-phone .show-phone--ib {
-  display: inline-block;
+@media (min-width: 1400px) {
+  .show-widescreen--i {
+    display: inline;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1399px) {
+  .show-desktop--i {
+    display: inline;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .show-tablet-wide--i {
+    display: inline;
+  }
+}
+@media (min-width: 640px) and (max-width: 767px) {
+  .show-tablet--i {
+    display: inline;
+  }
+}
+@media (max-width: 639px) {
+  .show-phone--i {
+    display: inline;
+  }
+}
+
+@media (min-width: 1400px) {
+  .show-widescreen--ib {
+    display: inline-block;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1399px) {
+  .show-desktop--ib {
+    display: inline-block;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .show-tablet-wide--ib {
+    display: inline-block;
+  }
+}
+@media (min-width: 640px) and (max-width: 767px) {
+  .show-tablet--ib {
+    display: inline-block;
+  }
+}
+@media (max-width: 639px) {
+  .show-phone--ib {
+    display: inline-block;
+  }
 }
 
 /*
