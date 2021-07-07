@@ -10,10 +10,6 @@ There are multiple parts to Roneo.
 
 The general structure of the admin should conform to the content in [`./html/shell.html`](). There’s also a [slim](http://slim-lang.com) version at [`./html/shell.slim`]().
 
-### Breakpoints
-
-We use [metaQuery](https://github.com/benschwarz/metaquery) for gaining access to media queries in JavaScript and CSS. The admin expects the breakpoints in [`./html/breakpoints.html`]() to be included in the page.
-
 ### JavaScript
 
 General JavaScript for the admin shell. This will handle any document `onready` bindings for setup. Simple import and call it:
