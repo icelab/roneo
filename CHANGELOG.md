@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+# v3.1.0 2021-07-13
+
+* [Remove metaQuery dependency](https://github.com/icelab/roneo/pull/20)
+
 # v3.0.8 2019-01-08
 
 * Fix CSS bug

@@ -1,12 +1,6 @@
 import fontsCached from '../fonts-cached'
 
 /**
- * Expose metaQuery as a global on window
- */
-import metaQuery from 'metaquery'
-window.metaQuery = metaQuery
-
-/**
  * Intended to be inlined and injected in to the <head> of the page
  */
 export default function inlineHeader (options = {}) {

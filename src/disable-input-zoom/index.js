@@ -3,11 +3,15 @@ let allowDisable = false
 /**
  * Enable/disable the zoom disabling function. Meta, I know.
  */
-if (window.metaQuery) {
-  window.metaQuery.onBreakpointChange('phone', (matches) => {
-    allowDisable = matches
-  })
-}
+const phoneBreakpoint = window.matchMedia("(max-width: 639px)")
+phoneBreakpoint.addEventListener("change", (e) => {
+  if (e.matches) {
+    allowDisable = true
+  } else {
+    allowDisable = false
+  }
+})
+
 
 /**
  * Toggle scaling using the viewport meta directive

@@ -44,16 +44,14 @@ export default function roneo (views) {
   })
 
   /**
-   * Make adjustments based on metaQuery breakpoints
-   * Assumes that metaQuery is an object on window (because it should be inlined)
+   * Make adjustments based on breakpoints
    */
-  if (window.metaQuery) {
-    window.metaQuery.onBreakpointChange('widescreen', function onBreakpointChangeWidescreen (matches) {
-      if (matches) {
-        removeNavOpenClasses()
-      }
-    })
-  }
+  const widescreenBreakpoint = window.matchMedia("(min-width: 1400px)")
+  widescreenBreakpoint.addEventListener("change", (e) => {
+    if (e.matches) {
+      removeNavOpenClasses()
+    }
+  })
 }
 
 // Additional exports

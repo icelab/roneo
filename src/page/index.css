@@ -20,17 +20,21 @@
   .page.nav-open {
     transform: translate3d(var(--navWidth), 0, 0);
   }
-  .breakpoint-widescreen .page {
-    flex: 3;
-    padding-left: 0;
+  @media (min-width: 1400px) {
+    .page {
+      flex: 3;
+      padding-left: 0;
+    }
   }
-  .breakpoint-phone .page {
-    overflow-x: hidden;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
-    padding-top: var(--headerHeightPhone);
-    padding-right: var(--spacingMedium);
-    padding-left: var(--spacingMedium);
+  @media (max-width: 639px) {
+    .page {
+      overflow-x: hidden;
+      overflow-y: scroll;
+      -webkit-overflow-scrolling: touch;
+      padding-top: var(--headerHeightPhone);
+      padding-right: var(--spacingMedium);
+      padding-left: var(--spacingMedium);
+    }
   }
 
 .page__contents {
@@ -39,8 +43,10 @@
   max-width: 144rem;
   padding-top: var(--spacingLarge);
 }
-  .breakpoint-phone .page__contents {
-    padding-top: var(--spacingMedium);
+  @media (max-width: 639px) {
+    .page__contents {
+      padding-top: var(--spacingMedium);
+    }
   }
 
 

@@ -35,11 +35,15 @@
     transition-duration: var(--navOpenDuration);
     width: 2rem;
   }
-  .breakpoint-widescreen .nav:after {
-    display: none;
+  @media (min-width: 1400px) {
+    .nav:after {
+      display: none;
+    }
   }
-  .breakpoint-widescreen .nav {
-    padding-top: var(--headerHeightDesktop);
+  @media (min-width: 1400px) {
+    .nav {
+      padding-top: var(--headerHeightDesktop);
+    }
   }
   .nav.nav-open {
     transform: translate3d(0, 0, 0);
@@ -47,11 +51,13 @@
     .nav.nav-open:after {
       opacity: 1;
     }
-  .breakpoint-widescreen .nav {
-    flex: 1;
-    position: relative;
-    transform: none;
-    overflow: visible;
+  @media (min-width: 1400px) {
+    .nav {
+      flex: 1;
+      position: relative;
+      transform: none;
+      overflow: visible;
+    }
   }
 
   .nav__content {
