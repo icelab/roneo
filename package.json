@@ -27,10 +27,10 @@
     "posttest": "npm run lint"
   },
   "devDependencies": {
-    "babel-cli": "^6.3.17",
-    "babel-plugin-transform-object-rest-spread": "6.16.0",
-    "babel-preset-es2015": "^6.3.13",
-    "babel-preset-react": "^6.3.13",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
     "eslint": "^2.3.0",
     "eslint-config-standard": "^5.1.0",
     "eslint-config-standard-react": "2.3.0",
@@ -38,7 +38,7 @@
     "eslint-plugin-react": "^7.11.1",
     "eslint-plugin-standard": "^1.3.2",
     "faucet": "0.0.1",
-    "tape": "^4.2.2"
+    "tape": "^4.14.0"
   },
   "dependencies": {
     "domready": "^1.0.8",
@@ -46,11 +46,11 @@
     "es5-shim": "^4.5.12",
     "es6-shim": "^0.35.3",
     "fastclick": "^1.0.6",
-    "fontfaceobserver": "^2.0.13",
+    "fontfaceobserver": "^2.1.0",
     "formalist-serialize-react": "^1.0.6",
     "formalist-standard-react": "team-formalist/formalist-standard-react#ac/support-many-forms",
     "immutable": "^3.8.2",
-    "nodemon": "^1.18.6",
+    "nodemon": "^2.0.0",
     "prop-types": "^15.6.0",
     "turbolinks": "^5.2.0",
     "viewloader": "^2.0.0"
