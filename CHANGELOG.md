@@ -1,7 +1,11 @@
-# Change Log
+# Changelog
 
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
+
+# v3.1.1 2021-11-17
+
+* Upgrade various dependencies to resolve security issues
 
 # v3.1.0 2021-07-13
 
