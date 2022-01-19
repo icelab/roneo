@@ -1982,9 +1982,9 @@ formalist-serialize-react@^1.0.6:
     formalist-data-object-renderer "^1.0.3"
     immutable "^3.7.6"
 
-formalist-standard-react@team-formalist/formalist-standard-react#ac/support-many-forms:
+formalist-standard-react@team-formalist/formalist-standard-react#nr/many-forms-with-close-selector-support:
   version "4.1.8"
-  resolved "https://codeload.github.com/team-formalist/formalist-standard-react/tar.gz/f0a589bf87ea1b8e30930eda3be82916a3db0d0b"
+  resolved "https://codeload.github.com/team-formalist/formalist-standard-react/tar.gz/4c79055e2f461af1edaa4416ab93b53940326e1b"
   dependencies:
     uid "^0.0.2"
     attache-upload "^2.1.1"
