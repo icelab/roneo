@@ -18,6 +18,6 @@ jobs:
       - name: Build project
         run: yarn run build
       - name: Publish to npm
-        run: npm publish --dry-run
+        run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
