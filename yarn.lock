@@ -1950,9 +1950,10 @@ form-data@^2.3.1:
     redux "^3.3.1"
     redux-batched-actions "^0.1.2"
 
-formalist-compose@team-formalist/formalist-compose-js#ac/support-many-forms:
-  version "3.0.2"
-  resolved "https://codeload.github.com/team-formalist/formalist-compose-js/tar.gz/e0adf0ab2957c5d2f4f5801c98f2ca62731c2435"
+formalist-compose@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/formalist-compose/-/formalist-compose-3.1.0.tgz#04e8e6d12b042eabfb7a52da2ab2842a92ef6c91"
+  integrity sha512-jtQqG/pwsfeW+DELeyJ0+1by4SLQc8nVp97DTpUJ5h7fyxq7fB4NWReZCWeLeOOhPs8DHkBZ0gKUQnocOaz/jg==
   dependencies:
     component-emitter "1.2.1"
     formalist-validation "^1.0.0"
@@ -1967,11 +1968,12 @@ formalist-data-object-renderer@^1.0.3:
   dependencies:
     formalist-compose "^2.0.1 || ^3.0.1"
 
-formalist-data-object-renderer@team-formalist/formalist-data-object-renderer#ac/support-many-forms:
-  version "1.0.3"
-  resolved "https://codeload.github.com/team-formalist/formalist-data-object-renderer/tar.gz/22392d54f1ccf0c988407bc80bdfb0c5e4bcbcfc"
+formalist-data-object-renderer@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/formalist-data-object-renderer/-/formalist-data-object-renderer-1.1.1.tgz#d54288108c07140e0d1db66faed9639a4488bcf3"
+  integrity sha512-qk4aI0HRTrTA2uSsiThznqPQQVNSY4J8pGvUl/rvY7+7FrXsmqNkKMaklSEpyk7oyBsnDJAXyO+xgsZZH+NzmA==
   dependencies:
-    formalist-compose "^2.0.1 || ^3.0.1"
+    formalist-compose "^3.1.0"
 
 formalist-serialize-react@^1.0.6:
   version "1.0.6"
@@ -1982,9 +1984,9 @@ formalist-serialize-react@^1.0.6:
     formalist-data-object-renderer "^1.0.3"
     immutable "^3.7.6"
 
-formalist-standard-react@team-formalist/formalist-standard-react#nr/many-forms-with-close-selector-support:
+formalist-standard-react@team-formalist/formalist-standard-react#nr/many-forms-update-dependencies:
   version "4.1.8"
-  resolved "https://codeload.github.com/team-formalist/formalist-standard-react/tar.gz/4c79055e2f461af1edaa4416ab93b53940326e1b"
+  resolved "https://codeload.github.com/team-formalist/formalist-standard-react/tar.gz/58565c69d11350dc15407c19fe5914e292b31a6b"
   dependencies:
     uid "^0.0.2"
     attache-upload "^2.1.1"
@@ -2002,8 +2004,8 @@ formalist-standard-react@team-formalist/formalist-standard-react#nr/many-forms-w
     emotion "^8.0.8"
     es6-promise "^4.1.1"
     exif-js "2.3.0"
-    formalist-compose team-formalist/formalist-compose-js#ac/support-many-forms
-    formalist-data-object-renderer team-formalist/formalist-data-object-renderer#ac/support-many-forms
+    formalist-compose "^3.1.0"
+    formalist-data-object-renderer "^1.1.1"
     fuzzy "0.1.3"
     is-number "^4.0.0"
     lodash.assigninwith "^4.2.0"
