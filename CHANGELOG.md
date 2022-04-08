@@ -3,6 +3,11 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+# v3.2.0 2022-04-08
+
+* Upgrade formalist-standard-react to add support for lists of many forms.
+* Add option to configure the name of the csrf token submitted in a confirm action.
+
 # v3.1.0 2021-07-13
 
 * [Remove metaQuery dependency](https://github.com/icelab/roneo/pull/20)
